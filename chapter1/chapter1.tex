@@ -1,0 +1,339 @@
+\chapter{L'agricoltura di precisione}
+
+\begin{preamble}
+{\em Nel primo capitolo, si introduce il concetto di agricoltura di precisione, fornendo inizialmente una breve definizione. Successivamente, si esplorerà il percorso storico che condurrà dalle origini dell'agricoltura fino ai giorni nostri, dove l'agricoltura di precisione è diventata una pratica diffusa. Questo  permetterà di comprendere l'evoluzione della ricerca in questo campo fino all'attuale stato dell'arte.
+
+In seguito, si esamineranno le due tecnologie fondamentali su cui si basa l'agricoltura di precisione: il machine learning e il deep learning. Per entrambe queste tecnologie, si presenterà in modo conciso le tecniche più utilizzate, sia in generale che nel contesto specifico dell'agricoltura di precisione, mettendone in luce vantaggi e svantaggi.
+
+Infine, nell'ultima sezione, affronteremo il tema dell'Internet delle cose (IoT), che rappresenta il contesto in cui si colloca l'applicazione sviluppata in Unity.
+}
+\end{preamble}
+
+\section{Introduzione all'agricoltura di precisione}
+
+L'agricoltura di precisione può essere definita come un approccio integrato all'agricoltura che impiega dati geo-referenziati, tecnologie digitali, sensori, automazione e analisi avanzate per monitorare, gestire e ottimizzare con precisione ogni aspetto del processo agricolo, dalla preparazione del suolo alla coltivazione, dalla raccolta alla distribuzione. 
+
+L'obiettivo principale è massimizzare l'efficienza nell'uso delle risorse, minimizzare gli impatti ambientali, migliorare la produttività e la qualità delle colture, e garantire una gestione sostenibile delle aziende agricole. L'agricoltura di precisione si basa su un approccio personalizzato, in cui le decisioni vengono prese in tempo reale in base alle specifiche condizioni e necessità di ogni singola area coltivata, consentendo agli agricoltori di ottimizzare i rendimenti e la redditività, riducendo, al contempo, gli sprechi e l'impatto ambientale.
+
+\section{Storia dell'agricoltura di precisione}
+
+Gli antichi, pur comprendendo le differenze nella produzione agricola tra i vari campi, sembravano dare scarsa importanza alle variazioni all'interno di ciascun campo, come testimonia Catone nel 160 a.C. 
+
+I Romani valutavano l'acquisto di terra principalmente in base alla loro impressione generale sulla gestione della fattoria, la sua posizione nel paesaggio e le caratteristiche del suolo. Per fertilizzare i campi, utilizzavano una serie di metodi tra cui concimi organici, compost e il liquido residuo dall'estrazione dell'olio d'oliva. Tuttavia, a causa del pesante carico di lavoro richiesto per le pratiche agricole fondamentali, sembra che abbiano dato scarsa attenzione alla variazione all'interno dei singoli campi. I proprietari terrieri si concentravano di più sulla gestione degli schiavi o dei liberti che sulla differenziazione dei terreni. Inoltre, l'acquisizione di nuove terre era spesso più prioritaria della gestione delle aree degradate all'interno dei campi. 
+
+Nei secoli successivi, gli scienziati iniziarono a definire gli obiettivi della scuola agraria. Il primo tema sperimentale che emerse fu la necessità di affrontare la variabilità nella resa delle colture dovuta all'eterogeneità dei suoli. Nonostante gli sforzi per individuare aree il più omogenee possibile per condurre esperimenti sul campo, l'ostacolo dell'eterogeneità del terreno continuava a sfidare i ricercatori. 
+
+Negli anni venti del secolo scorso, si compirono notevoli progressi per migliorare le decisioni legate alla variabilità spaziale su piccola scala. Robert A. Fisher iniziò un lavoro rivoluzionario presso la Rothamsted Experiment Station di Harpenden, in Inghilterra, nel 1919. In sette anni, sviluppò una serie di strumenti statistici che sarebbero diventati la base per la maggior parte degli esperimenti su piccole aree, e persino interi campi. L'applicazione dei principi enunciati da Fisher e l'ampliamento degli strumenti statistici per affrontare le sfide legate alle pendenze e alle differenze sistematiche nei terreni, si rivelarono fondamentali per mitigare l'impatto della variabilità spaziale negli esperimenti su piccole aree condotti da generazioni di ricercatori sul campo. Tuttavia, nessuno di questi strumenti si è dimostrato particolarmente idoneo a gestire la variabilità nei fattori quali nutrienti, infestazioni da erbe infestanti, presenza di insetti, dosaggi di semina o altri input gestionali nei campi.
+
+A partire dal 1920, gran parte dell'attenzione nell'agricoltura orientata alla specificità del suolo si è concentrata sulla gestione dei nutrienti per le coltivazioni. L'analisi del terreno è emersa come un aspetto cruciale, poiché è stata riconosciuta come un mezzo per valutare la capacità del suolo di fornire nutrienti, un concetto che risale ai lavori di Sprengel nel 1839. 
+
+Nella procedura di analisi del terreno, un campione di suolo viene prelevato dal campo per poi essere sottoposto ad un trattamento per rimuovere detriti e piccoli sassi. Successivamente, il campione viene mescolato con un estrattore liquido, filtrato e il contenuto del nutriente di interesse viene quantificato per consentire un confronto con una quantità standard correlata a una potenziale risposta della coltura. Questa risposta può risultare vantaggiosa per la coltivazione o, in alcuni casi, avere effetti tossici, a seconda del tipo di elemento o composto estratto e della sua quantità nel terreno. 
+
+La prima raccomandazione conosciuta per il campionamento del suolo al fine di gestire la variabilità nei campi agricoli fu pubblicata da Linsley e Bauer nel 1929. Questa raccomandazione suggeriva agli agricoltori di prelevare campioni di suolo a una profondità di 15 cm e analizzarli seguendo una griglia di 0,4 ettari, con ulteriori prelievi a 30 cm di profondità. La motivazione dietro questa pratica era legata alla difficoltà di diffondere il calcare agricolo in campi con terreno acido.
+
+Nel 1938, gli agricoltori avevano ormai a disposizione numerose macchine per l'applicazione di fertilizzanti, molte delle quali venivano utilizzate regolarmente, comprese quelle per la distribuzione, la localizzazione in collina e l'applicazione vicino ai semi.
+
+Dal decennio degli anni '50 fino ai giorni nostri, il campionamento base del suolo è stato principalmente rappresentato da campioni compositi che rappresentano un intero campo. Nonostante i ricercatori esperti nella variazione spaziale dei nutrienti delle colture abbiano consigliato di includere solo terreni relativamente omogenei e simili in un campione composito, essi venivano prelevati da diverse zone all'interno dei campi, delimitate dai confini imposti dagli agricoltori, considerando la variabilità dei suoli al loro interno. 
+
+Negli anni '60, si verificarono anche importanti avanzamenti nell'affrontare direttamente la variabilità spaziale dei nutrienti del suolo, con l'introduzione del campo statistico della geo-statistica da parte di un ricercatore canadese di nome Matheron nel 1963.
+
+Poiché il campionamento del suolo o di qualsiasi altra entità all'interno di un campo agricolo identifica soltanto la piccola area da cui vengono prelevati campioni, piante, parti di piante o misurazioni, la stragrande maggioranza delle zone all'interno del campo rimane sconosciuta rispetto ai valori osservati. Di conseguenza, è necessario stimare o \textit{interpolare} i valori delle aree non campionate nel campo per prendere decisioni basate sui risultati del campionamento. Il \textit{Kriging} è il metodo preferito per raggiungere questo obiettivo, sebbene richieda un insieme minimo di almeno 30 osservazioni per essere applicato con successo.
+
+Negli anni '80, il Dipartimento della Difesa degli Stati Uniti ottenne finanziamenti dal Congresso per sviluppare il sistema di posizionamento satellitare noto come \textit{GPS}. La rete GPS era composta da 24 satelliti e fu completata nel 1994. L'anno precedente, nel 1993, venne siglato un accordo tra il Dipartimento della Difesa e il Dipartimento dei Trasporti, che consentì l'utilizzo civile del sistema GPS. Questa apertura del GPS al settore agricolo rappresentò una svolta fondamentale per l'agricoltura di precisione, e in breve tempo diverse aziende iniziarono a offrire sistemi GPS per l'agricoltura.
+
+Inizialmente, i sistemi GPS originali avevano una precisione che non permetteva la localizzazione entro pochi metri dalla posizione desiderata. Tuttavia, le aziende agricole e gli agricoltori risolsero questo problema installando torri di correzione cinetica in tempo reale, che migliorarono notevolmente la precisione del posizionamento. Va notato che i segnali GPS provenienti direttamente dai satelliti potevano presentare errori dovuti alle condizioni atmosferiche. Per affrontare questi errori, vennero sviluppati ricevitori e trasmettitori differenziali satellitari correttivi, come quelli adottati nel sistema \textit{GreenStar} di John Deere.
+
+La determinazione della topografia può presentare un impatto significativo sullo sviluppo del suolo e sul movimento dell'acqua all'interno del terreno, influenzando così la produttività delle coltivazioni. La misurazione dell'elevazione può essere effettuata con il GPS differenziale dal quale è possibile ottenere non solo la latitudine e la longitudine, ma anche l'altitudine della posizione GPS.
+
+Un approccio innovativo al rilevamento topografico è stato introdotto con lo sviluppo del \textit{LiDAR (Light Detecting And Ranging)}. Il LiDAR ha visto la luce poco dopo l'invenzione del laser, agli inizi degli anni '60.
+
+Oltre alla topografia, diversi altri strumenti sono stati impiegati nello sviluppo delle zone di gestione dei nutrienti. Tra questi strumenti, le immagini satellitari hanno svolto un ruolo cruciale, soprattutto per quanto riguarda la gestione dell'azoto. Con il tempo, le immagini satellitari si sono rivelate strumenti preziosi per delimitare le zone di gestione dell'azoto durante la stagione agricola, integrando dati ottenuti tramite campionamento del suolo e altri metodi. Successivamente, sono stati sviluppati sensori basati sulle proprietà di trasmittanza elettrica del suolo ampiamente utilizzati per la delineazione delle zone di gestione dei nutrienti.
+
+La conducibilità elettrica è stata anche direttamente correlata ai livelli di nitrato nel suolo in terreni che altrimenti sembravano uniformi. Inoltre, sia la conducibilità elettrica che il magnetismo possono essere utilizzati per rilevare differenze nella capacità di ritenzione dell'acqua, nei contenuti idrici del suolo, nella capacità di scambio cationico, nella porosità, nella salinità e nei gradienti di temperatura.
+Tuttavia, in molti campi più di un fattore varia in modo indipendente dagli altri. In campi \textit{multivariabili}, i sensori di conducibilità elettrica e di flusso magnetico sono strumenti efficaci per identificare pattern e suddividere le zone, spesso superando altre tecniche.
+
+La costruzione di algoritmi finalizzati all'applicazione dell'azoto durante la stagione si basa sulla previsione delle rese da parte del sensore in una striscia di azoto, confrontata con altre aree all'interno del campo. Il risultato di questo lavoro è stata la commercializzazione del sensore attivo-ottico \textit{GreenSeeker} nel 2002. Questo applicatore aveva la capacità di operare alle velocità del trattore nel campo e applicare l'azoto a ogni metro quadro di coltura in modo indipendente grazie alla sua serie di sensori e gruppi di ugelli posizionati ad ogni metro di larghezza della barra di spruzzatura.
+
+La commercializzazione di successo dei sensori del suolo correlati ai nutrienti include il sensore del pH del suolo Veris Technologies. In uno studio, l'uso del sensore di pH Veris ha correlato il pH mappato dal sensore con i veri modelli di pH del terreno rispetto alle tecniche standard di campionamento del suolo site-specific, riducendo gli errori nelle raccomandazioni di dosaggio della calce del 50\%. Veris commercializza anche l'\textit{Optic Mapper}, che utilizza un rilevatore di infrarossi vicino all'interno del suolo per stimare il contenuto di materia organica di quest'ultimo.
+
+\section{Machine Learning e Deep Learning nell’agricoltura di precisione}
+\subsection{Introduzione}
+
+L'agricoltura costituisce il pilastro fondamentale della nostra economia in quanto la crescente domanda di prodotti alimentari, derivante dall'incremento della popolazione, continua a crescere in modo costante. Per rispondere efficacemente a questa esigenza, il settore agricolo deve compiere notevoli progressi, ad esempio nell'effettuare calcoli precisi sulla produzione, sfruttando le attrezzature agricole più avanzate e aggiornate disponibili sul mercato. L'obiettivo principale di tali progressi è quello di soddisfare la crescente richiesta di coltivazioni alimentari di alta qualità.
+
+Per avviare il processo verso l'agricoltura di precisione, si compiono passi iniziali fondamentali tra cui la previsione meteorologica e la valutazione degli effetti dei vari fertilizzanti, sfruttando il telerilevamento e i sensori per monitorare lo stato di salute delle colture.
+
+Un importante passo avanti nell'evoluzione dell'agribusiness è consistito nell'introduzione dei sensori wireless nell'agricoltura e nell'industria alimentare. Questa innovazione ha aperto nuove possibilità nel monitoraggio e nell'ottimizzazione delle attività agricole e industriali legate al settore alimentare, contribuendo, così, a migliorare l'efficienza e la qualità della produzione agroalimentare.
+
+Il concetto di gestione agricola si basa sulla raccolta di dati mediante osservazioni e misurazioni, nonché sulla capacità di rispondere in modo mirato alla variabilità delle colture sia tra i diversi campi che all'interno dello stesso campo. Questo approccio consente di ottimizzare la produzione agricola, ridurre gli impatti negativi sull'ambiente e garantire una fornitura continua di alimenti di alta qualità, contribuendo, così, a soddisfare le crescenti esigenze alimentari globali in modo sostenibile.
+
+Affrontare questi problemi richiede un approccio integrato che coinvolga la ricerca scientifica, la formazione degli agricoltori, la promozione di pratiche agricole sostenibili e l'implementazione di regolamenti sanitari e ambientali rigorosi. Solo attraverso un impegno globale e coordinato è possibile affrontare efficacemente queste sfide e garantire una produzione agricola sicura, sostenibile e in grado di rispondere alle crescenti esigenze alimentari della popolazione mondiale.
+
+L'agricoltura moderna affronta la sfida di mantenere l'equilibrio nell'ecosistema, evitando l'accumulo eccessivo di sostanze chimiche che possono danneggiare l'ambiente. La soluzione a questi problemi non può essere standardizzata poiché variano in base alle specifiche condizioni e alle manifestazioni locali. Per affrontare queste sfide complesse, è necessario adottare un approccio ecologico completo e flessibile, basato sull'osservazione e sull'analisi continua di tutti gli aspetti del sistema agricolo.
+
+Un'opzione per mitigare questa situazione consiste nell'utilizzo dell'Intelligenza Artificiale, in particolare il Machine Learning. Quest'ultimo può fornire agli agricoltori dati e informazioni preziose per ottimizzare la produzione di colture, ridurre i costi iniziali e gestire le perdite dovute a calamità naturali. Questo approccio intelligente può contribuire a rendere l'agricoltura più efficiente ed ecologicamente sostenibile.
+
+Un esempio di questo concetto è stato esplorato da Gomes e Leta nel 2012, che hanno studiato l'applicazione di tecniche informatiche nel settore agricolo e alimentare per migliorare la qualità dei prodotti. Allo stesso modo, Davies nel 2009 ha esaminato l'uso della visione artificiale e delle sue applicazioni nel settore agroalimentare. Queste ricerche dimostrano l'innovazione tecnologica, come quella apportata dall'Intelligenza Artificiale, possa portare a miglioramenti significativi all'agricoltura moderna.
+
+\subsection{Il Machine Learning}
+
+L'apprendimento automatico è un campo interdisciplinare che fonde l'informatica e la statistica, ponendosi come obiettivo l'analisi e la classificazione dei dati, svolgendo compiti che in genere richiederebbero l'intervento umano. Per raggiungere questo obiettivo, è necessario istruire i calcolatori in modo da risolvere problemi del mondo reale con la massima precisione possibile.
+
+Di seguito, verranno illustrate le tre principali modalità di apprendimento automatico utilizzate negli algoritmi di Machine Learning, ovvero:
+
+\begin{itemize}
+    \item Supervised Learning;
+    \item Unsupervised Learning;
+    \item Reinforcement Learning ;
+\end{itemize}
+
+\subsubsection{Supervised Learning}
+
+L'apprendimento supervisionato, o \textit{supervised learning}, come suggerisce il nome, richiede la guida di un supervisore per eseguire il compito. In questo tipo di apprendimento, una macchina viene addestrata utilizzando dati precedentemente raccolti e annotati, chiamati \textit{dati etichettati}. Questi dati consentono all'algoritmo di apprendimento supervisionato di analizzare il set di addestramento e produrre risultati corretti basati sulle etichette fornite. 
+
+L'apprendimento supervisionato si suddivide in due categorie principali: la \textit{regressione} e la \textit{classificazione}. La regressione è una tecnica utilizzata per stabilire la relazione tra variabili indipendenti e variabili dipendenti, consentendo di predire valori numerici. D'altra parte, la classificazione consiste nel suddividere i dati in classi specifiche e distinte, assegnando un'etichetta a ciascuna classe.
+
+L'approccio supervisionato è ampiamente utilizzato in applicazioni in cui è fondamentale effettuare previsioni o assegnare classificazioni basate su dati storici conosciuti e risultati noti, come nel riconoscimento delle immagini, nell'analisi del testo, nella diagnosi medica e in molte altre sfide decisionali.
+
+\subsubsection{Unsupervised Learning}
+
+L'apprendimento automatico non supervisionato, o \textit{unsupervised learning}, è un tipo di approccio in cui il modello non richiede una guida esterna, ma estrae informazioni dai dati stessi, principalmente da dati non etichettati. Gli algoritmi di apprendimento non supervisionato sono spesso utilizzati in compiti complessi e possono generare risultati eccellenti, in particolare quando si tratta di scoprire modelli nascosti nei dati. Gli algoritmi di apprendimento non supervisionato sono impiegati per scoprire pattern, cluster o associazioni all'interno dei dati in modo autonomo.
+
+Questo tipo di apprendimento è stato applicato anche nell'agricoltura di precisione, dimostrando la sua utilità nell'analisi dei dati agricoli complessi. In generale, l'apprendimento non supervisionato può essere suddiviso in due categorie principali, ovvero il \textit{clustering} (raggruppamento di dati simili) e l'\textit{associazione} (individuazione di relazioni tra variabili o elementi nei dati).
+
+\subsubsection{Reinforcement Learning}
+
+Nell'apprendimento per rinforzo, o \textit{reinforcement learning}, l'agente è dotato della capacità di interagire con l'ambiente e di migliorare le sue azioni nel tempo. Questo tipo di apprendimento si basa spesso su prove ed errori, in cui l'agente sperimenta diverse azioni per trovare una strategia che massimizzi il suo "rinforzo" o la sua ricompensa. L'apprendimento per rinforzo è particolarmente utile quando non esiste un metodo definito per eseguire un task. Infatti, l'agente deve seguire regole o strategie specifiche per svolgere efficacemente il suo task. In questo tipo di apprendimento, non sono richieste etichette o dati pre-etichettati.
+
+Esistono due tipi principali di apprendimento per rinforzo: il \textit{rinforzo positivo}, in cui l'agente è ricompensato per azioni corrette o desiderate, e il \textit{rinforzo negativo}, in cui l'agente è punito o riceve un feedback negativo per azioni indesiderate. Questo feedback guida l'agente nell'apprendimento di strategie ottimali.
+
+\subsection{Algoritmi Machine Learning}
+
+L'apprendimento automatico, o \textit{Machine Learning}, è un campo in continua crescita, con diversi autori che sfruttano una vasta gamma di algoritmi per risolvere problemi complessi. Questo campo è al centro di una ricerca attiva, con numerosi studi in corso. Nel seguito, daremo uno sguardo alle principali tecniche di Machine Learning.
+
+\subsubsection{Artificial Neural Network}
+
+Le \textit{Artificial Neural Network (ANN)} sono una classe di modelli di apprendimento automatico ispirati al funzionamento del cervello umano. Queste reti sono composte da un gran numero di elementi chiamati neuroni artificiali, o nodi, che operano in modo simile ai neuroni biologici. Ogni neurone prende decisioni semplici basate sui dati di input e trasmette queste decisioni ad altri neuroni attraverso connessioni pesate. L'interconnessione di questi neuroni è conosciuta come \textit{struttura} della rete neurale.
+
+Una rete neurale può essere poco o molto profonda, a seconda del numero di strati di neuroni. Una rete neurale poco profonda ha solitamente tre strati principali: 
+
+\begin{itemize}
+    \item il \textit{layer di input};
+    \item il \textit{layer nascosto};
+    \item il \textit{layer di output}.
+\end{itemize}
+
+Il layer di input riceve i dati in ingresso, il layer di output restituisce i risultati finali, ci possono essere uno o più layer nascosti tra di essi. Questi strati nascosti sono responsabili di elaborare e apprendere rappresentazioni complesse dai dati di input.
+
+\subsubsection{Support Vector Machine}
+
+Il \textit{Support Vector Machine (SVM)} è un algoritmo ampiamente utilizzato nel campo dell'apprendimento automatico per risolvere problemi di classificazione e regressione. L'obiettivo principale dell'SVM è creare un confine decisionale efficace in uno spazio ad alta dimensione per separare le diverse classi dei dati. Questo confine decisionale è comunemente noto come \textit{iperpiano}.
+
+\subsubsection{Clustering}
+
+Il \textit{clustering} implica la suddivisione dei dati in gruppi in base alle loro somiglianze e differenze intrinseche. Fondamentalmente, si tratta di organizzare dati simili in insiemi distinti. Il clustering riveste un'importanza notevole, poiché facilita il raggruppamento dei dati precedentemente non strutturati. 
+
+I metodi di clustering includono approcci basati sulla \textit{densità} e sulla \textit{gerarchia}. Gli approcci basati sulla densità identificano i cluster come regioni dense all'interno dello spazio dati, con una notevole precisione e la capacità di unire cluster simili. Gli approcci basati sulla gerarchia creano una struttura ad albero basata sulla gerarchia dei cluster, suddividendoli in categorie.
+
+\subsubsection{Decision Tree}
+
+Il \textit{decision tree}, o \textit{albero decisionale}, è uno strumento di modellazione analitica ampiamente utilizzato in vari settori. Questi alberi vengono costruiti attraverso un approccio algoritmico che scompone il set di dati in base a diverse condizioni. Nei modelli di alberi decisionali, la suddivisione dei dati si basa su criteri specifici e avviene in modo sequenziale. Questo algoritmo è composto da due componenti principali: i \textit{nodi decisionali} e le \textit{foglie}. I nodi decisionali sono i punti in cui avviene la suddivisione dei dati, mentre le foglie rappresentano i risultati finali. 
+
+\subsubsection{Principle Component Analysis}
+
+La \textit{Principle Component Analysis (PCA)} è una procedura statistica che trasforma le variabili correlate in variabili non correlate attraverso una trasformazione ortogonale. Viene utilizzata per esaminare le relazioni tra un insieme di variabili. Questo algoritmo è particolarmente utile quando si ha a che fare con un ampio insieme di variabili interconnesse e si desidera selezionare un sottoinsieme che sia il più informativo possibile per la creazione di un modello. 
+
+\subsection{Applicazioni del machine learning in agricoltura}
+
+Alcune applicazioni del machine learning in agricoltura sono le seguenti:
+
+\subsubsection{Previsione delle rese}
+
+L'agricoltura coinvolge numerosi fattori che possono influenzare i risultati ottimali. La previsione del rendimento delle colture è uno di questi aspetti critici, che considera parametri come la fertilità del terreno, le tecniche di irrigazione, le condizioni meteorologiche e la gestione dei parassiti. La corretta gestione di questi quattro elementi è fondamentale per la protezione e il massimo rendimento del raccolto. Nell'ambito agricolo, sono stati adottati modelli di apprendimento automatico per migliorare la previsione e la gestione di tali fattori.
+
+L'applicazione dell'apprendimento automatico ha dimostrato di essere estremamente utile nella gestione delle coltivazioni di caffè. Grazie a questa tecnologia, è possibile effettuare il conteggio dei semi di caffè su un ramo e suddividere i frutti di caffè in tre categorie: raccolti, non raccolti e semi privi di maturazione. Inoltre, è possibile stimare con precisione il peso dei semi e calcolare la percentuale di maturazione dei semi di caffè.
+
+Ramos ed altri nel 2017 hanno presentato un sistema di visione artificiale (MVS) che consente il conteggio automatico dei frutti di caffè direttamente dall'albero di caffè. Questo sistema si è dimostrato particolarmente affidabile, in quanto ha ottenuto una correlazione significativamente elevata, pari a 0,90, tra le stime di conteggio dei semi effettuate mediante MVS e la realtà.
+
+Questa tecnologia non solo semplifica il processo di monitoraggio delle coltivazioni di caffè ma può anche contribuire a migliorare la gestione delle risorse e a ottimizzare la produzione agricola.
+
+\subsubsection{Rilevamento dei parassiti e malattie}
+
+Il controllo dei parassiti e delle malattie rappresenta una delle sfide principali nell'agricoltura contemporanea. Un approccio comunemente adottato è la diffusione uniforme di pesticidi sulle colture, sebbene ciò sia costoso ed implichi rischi ambientali, come la contaminazione delle risorse idriche e l'impatto sulla fauna selvatica e sull'ecosistema.
+
+Il lavoro condotto da Ebrahimi nel 2017 ha portato allo sviluppo di una macchina in grado di identificare i parassiti all'interno di un ambiente di serra attraverso l'analisi delle immagini. Per questa identificazione, è stato utilizzato con successo il metodo SVM (Support Vector Machine) per la classificazione e il rilevamento dei parassiti.
+
+L'approccio combinato di elaborazione delle immagini e l'impiego del metodo SVM, considerando in modo adeguato la provincia e l'indice di colore, si è rivelato altamente efficace nel rilevare i parassiti con un'elevata efficienza. Questo rappresenta un importante passo avanti nella gestione sostenibile delle coltivazioni in serra, consentendo il rilevamento precoce dei parassiti e, di conseguenza, un controllo più mirato ed efficiente.
+
+\subsubsection{Rilevamento delle erbacce}
+
+La prevenzione delle erbe infestanti è cruciale per garantire una buona resa nelle coltivazioni. Tuttavia, identificare e prevenire con precisione le erbe infestanti può essere una sfida, poiché spesso sono simili alle colture. L'apprendimento automatico basato su sensori rappresenta un approccio efficace che consente di rilevare ed evitare le erbe infestanti con precisione, riducendo i costi e minimizzando l'impatto sull'ambiente.
+
+Nel lavoro condotto da Pantazi nel 2017, è stata impiegata la tecnologia di telerilevamento per distinguere tra diverse specie di erbe infestanti e per creare mappe operative di tali infestazioni. In particolare, è stata utilizzata una telecamera multivisionale ad alta risoluzione montata su un sistema aereo senza pilota (UAS) per esporre e mappare le aree infestate da Silybum Marianum, una specie di erba infestante.
+
+L'uso di questa tecnologia avanzata ha permesso di ottenere immagini dettagliate e una mappatura precisa delle macchie di erbe infestanti, contribuendo, così, a una gestione più efficace e mirata delle infestazioni nelle coltivazioni.
+
+\subsubsection{Gestione del suolo}
+
+La gestione del suolo riveste un ruolo cruciale nell'ottimizzazione della resa delle colture, nella promozione della stabilità ecologica e nella salvaguardia della salute umana, sia in modo diretto che indiretto. Il suolo è una risorsa naturale estremamente diversificata, caratterizzata da processi complessi e intricati meccanismi. La temperatura del suolo stessa svolge un ruolo essenziale nell'analisi accurata delle variazioni climatiche di una determinata area e nel suo comportamento ecologico.
+
+Gli algoritmi di apprendimento automatico hanno un ruolo di notevole importanza nella misurazione della temperatura e dell'umidità del suolo. Questi strumenti sono fondamentali per comprendere le dinamiche degli ecosistemi e, per valutare il loro impatto sull'agricoltura.
+
+Nel lavoro condotto da Ghosh e Koley nel 2014, è stata introdotta una nuova tecnica chiamata \textit{back propagation network} (rete a propagazione all'indietro) che ha dimostrato di ottenere risultati migliori nel processo di identificazione delle caratteristiche del suolo rispetto all'utilizzo del tradizionale modello di regressione multivariata. Il funzionamento di questa rete a propagazione all'indietro consiste nell'addestrare un modello specifico per riconoscere le proprietà del suolo desiderate in base a determinate colture.
+
+Questo approccio, basato su reti neurali artificiali, offre un modo più efficace e preciso per analizzare le caratteristiche del suolo e può contribuire a migliorare la gestione e la produttività agricola.
+
+\subsubsection{Riconoscimento delle piante}
+
+L'apprendimento automatico offre un approccio più avanzato rispetto al metodo convenzionale di classificazione delle piante, che si basa sul confronto tra forma e colore delle foglie. L'uso dell'apprendimento automatico permette di ottenere risultati più precisi e rapidi analizzando la morfologia delle venature delle foglie; tale analisi fornisce informazioni dettagliate sulle caratteristiche delle foglie stesse. L'obiettivo principale di questo approccio è automatizzare il riconoscimento e la categorizzazione delle diverse varietà di piante, riducendo al minimo la necessità di intervento umano e accelerando il processo di categorizzazione.
+
+Nel lavoro condotto da Grinblat nel 2016 è stata utilizzata una rete di convoluzione profonda per affrontare il problema dell'identificazione delle piante basata sui modelli delle vene delle foglie. Nello specifico, gli autori hanno studiato tre diverse specie di legumi: il fagiolo bianco, il fagiolo rosso e la soia, utilizzando la morfologia delle vene delle foglie come principale indicatore. Questo approccio si è dimostrato uno strumento significativo nell'identificazione delle piante, superando le limitazioni legate al riconoscimento basato solo sul colore e sulla forma delle foglie.
+
+\subsubsection{Gestione della qualità del raccolto}
+
+Per massimizzare il valore del raccolto e minimizzare gli sprechi, è essenziale classificare la qualità del raccolto con un margine di errore minimo. Questo processo implica lo sviluppo della penultima sotto-categoria della coltura al fine di identificare in modo accurato le caratteristiche associate a una specifica classe di coltura.
+
+Nel lavoro condotto da Zhang nel 2017 è stato sviluppato un modello per rilevare e classificare il materiale estraneo, sia botanico che non botanico, che si radica nella lanugine di cotone durante il processo di raccolta.
+
+\subsubsection{Gestione dell'irrigazione}
+
+L'irrigazione riveste un ruolo essenziale nell'agricoltura, contribuendo in modo significativo alla produttività dei raccolti. Tuttavia, è fondamentale che essa sia gestita in modo equilibrato, evitando sia l'eccesso che la carenza di acqua. Per mantenere questo equilibrio, è importante prendere in considerazione diversi fattori, tra cui il tipo di suolo, la topografia del terreno, le condizioni meteorologiche, il tipo di coltura e la qualità dell'acqua disponibile.
+
+Il \textit{neuro drip}, sviluppato da Hinnell nel 2010, è un algoritmo basato su reti neurali artificiali (ANN) implementato in Excel. Questo strumento è stato progettato per analizzare e illustrare in modo rapido i modelli di bagnatura del suolo causati dai gocciolatori di superficie utilizzati nell'irrigazione agricola.
+
+\subsubsection{Benessere degli animali}
+
+Il settore del benessere animale è dedicato alla salute e al benessere degli animali, con l'obiettivo di preservare l'equilibrio degli ecosistemi. Una delle applicazioni chiave dell'apprendimento automatico in questo campo è il monitoraggio del comportamento degli animali nelle prime fasi di esposizione alle infezioni.
+
+Dutta ha sviluppato un approccio di apprendimento automatico a due fasi che si è dimostrato efficace per la classificazione del comportamento dei bovini. Questo metodo si basa sull'uso di tecnologie di sensori per il bestiame e classificatori appositamente costruiti al fine di classificare e analizzare i cambiamenti comportamentali dei bovini, con l'obiettivo di migliorare la loro alimentazione.
+
+\subsubsection{Previsioni sul bestiame}
+
+L'applicazione dell'apprendimento automatico nella produzione di animali da allevamento è fondamentale per valutare in modo accurato i bilanci monetari. Questo approccio permette ai produttori di ottenere informazioni basate sul monitoraggio della linea di produzione, contribuendo così a massimizzare i profitti. Gli algoritmi di apprendimento automatico hanno dimostrato di essere in grado di rilevare e segnalare tempestivamente i problemi, offrendo informazioni preventive ai produttori.
+
+Nello studio condotto da Morales nel 2016 è stato esaminato il riconoscimento della produzione di uova utilizzando un approccio basato su SVM. Questo metodo è stato sviluppato per identificare potenziali problemi nella produzione di uova utilizzando dati sulla produzione di uova da parte delle galline ovaiole. L'uso di una configurazione ottimale dei parametri in un modello SVM consente di emettere un avviso con un giorno di anticipo, il che può essere prezioso per diagnosticare precocemente i sintomi clinici e prevenire eventuali problemi nella produzione di uova.
+
+\subsection{Il Deep Learning}
+
+Il \textit{Deep Learning} è una metodologia moderna che ha dimostrato successo in diverse aree, tra cui l'elaborazione delle immagini e la classificazione dei testi. La sua alta efficienza in vari settori ha portato alla sua applicazione anche nell'ambito agricolo. Il Deep Learning coinvolge l'utilizzo di reti neurali con numerosi strati, progettate per eseguire task complessi. Alcuni modelli di Deep Learning hanno ottenuto risultati eccezionali che superano le capacità umane su larga scala. Ogni strato di una rete Deep Learning utilizza l'output del precedente come input, e l'intera rete viene addestrata come un'unica catena.
+
+Per sfruttarlo al meglio, esistono piattaforme apposite che aiutano gli utenti a costruire varie architetture di Deep Learning o ad applicarlo a diverse applicazioni aziendali, tramite app e servizi. Una delle principali differenze tra l'apprendimento automatico e il Deep Learning è la quantità di dati necessaria per la classificazione: il Deep Learning richiede tipicamente un maggior numero di dati rispetto all'apprendimento automatico, che può operare con dataset più limitati.
+
+Alcuni dei principali strumenti di Deep Learning includono \textit{Theano}, \textit{Keras}, \textit{TensorFlow}, \textit{PyTorch} e diversi toolbox. Questi strumenti forniscono agli sviluppatori le risorse necessarie per implementare modelli di deep learning e applicarli con successo a una vasta gamma di problemi e applicazioni.
+
+\subsubsection{Convolution Neural Networks}
+
+Le \textit{Convolution Neural Network (CNN)} sono una tipologia di reti neurali profonde che si basano su una struttura ispirata alla corteccia animale. Queste reti sono progettate per il riconoscimento di pattern all'interno di immagini e video, nonché per l'elaborazione del linguaggio naturale e altre applicazioni. Una CNN utilizza una serie di strati, tra cui strati di convoluzione, per identificare ed estrarre caratteristiche rilevanti dalle immagini.
+
+Nelle CNN vengono spesso utilizzate funzioni di attivazione, come la \textit{Rectified Linear Unit (ReLU)}, per introdurre non linearità nel modello. La \textit{convoluzione} è il processo chiave in una CNN e coinvolge l'applicazione di filtri apprendibili alle immagini di input, consentendo alla rete di rilevare caratteristiche rilevanti.
+
+Per migliorare l'accuratezza delle CNN, può essere utilizzata una tecnica chiamata \textit{aumento dei dati}, che consiste nel generare varianti dei dati di addestramento esistenti introducendo piccole modifiche o trasformazioni, come rotazioni o riflessi. Questo aiuta la rete a essere più robusta e ad avere una migliore capacità di generalizzazione.
+
+Le CNN trovano applicazione in una vasta gamma di campi, tra cui il riconoscimento facciale, l'analisi di documenti, la raccolta e l'analisi di dati storici e ambientali, la previsione meteorologica, e persino, la pubblicità solo per citarne alcuni. Due sono particolarmente efficaci quando si tratta di compiti che coinvolgono dati visivi, come il riconoscimento di oggetti in immagini o video.
+
+Le CNN sono ampiamente utilizzate nell'agricoltura grazie alla loro forte capacità di elaborazione delle immagini. Le principali applicazioni del Deep Learning nell'agricoltura possono essere catalogate come classificazione di piante o colture, previsione di parassiti e rese, raccolta con robot, monitoraggio di disastri, etc. In particolare, i modelli di riconoscimento delle malattie delle piante possono essere applicati tramite immagini delle foglie e classificazione dei pattern.
+
+Il \textit{Berkley Vision and Learning Centre} ha sviluppato un innovativo framework di Deep Learning per costruire un modello di rilevamento delle malattie delle piante. Questo sistema è in grado di identificare circa 10-15 casi di foglie malate rispetto alle foglie sane, ed è in grado anche di separare le foglie delle piante dall'ambiente circostante. Nel 2007, è stato sviluppato un approccio per il controllo e l'identificazione delle erbacce che è una combinazione di CNN e apprendimento delle caratteristiche K-means. I modelli manuali per il rilevamento delle erbacce portano ad un riconoscimento errato ed a una debole capacità di estrazione delle caratteristiche. Uno dei modelli CNN ampiamente utilizzati nella classificazione delle piante è \textit{Alexnet}. Sulla base dei risultati sperimentali di Alexnet, possiamo dire che l'architettura CNN supera gli algoritmi di apprendimento automatico, ovvero le strutture realizzate manualmente, a causa dell'ingiustizia delle fasi fonologiche.
+
+Per la divisione delle immagini ottiche e il successivo ripristino delle informazioni mancanti in una serie temporale di immagini satellitari, vengono utilizzate mappe Kohonen auto-organizzate. In questo metodo, per la configurazione del post-processing, vengono utilizzate l'analisi geo-spaziale e diverse tecniche di filtraggio. Anche se le CNN hanno diverse applicazioni, affrontano molte sfide che ne hanno rallentato l'applicazione nella classificazione delle piante. Ad esempio, ogni pixel delle immagini satellitari a bordo spaziale SAR è caratterizzato dalla fase di retro-diffusione e dall'intensità in molteplici polarizzazioni.
+
+Per la previsione delle rese e la raccolta con robot, il conteggio dei frutti è uno dei fattori importanti. Non possiamo ottenere risultati soddisfacenti attraverso il conteggio tradizionale o il conteggio delle immagini video o fotografiche, e anche questi processi richiedono tempo. La pre-elaborazione di questo tipo di immagini è impegnativa a causa dell'occlusione e dell'illuminazione. Nel 2018, Hansen e il suo team hanno introdotto una tecnica per identificare gli animali da allevamento come i maiali utilizzando la funzione di riconoscimento facciale delle CNN. In passato, venivano utilizzati tag di identificazione a radiofrequenza per rilevare gli animali, il che era un lavoro complicato.
+
+Per accompagnare una rete completamente convoluzionale, è stata proposta una tecnica nota come \textit{rilevamento di blob}. Il primo passo è raccogliere etichette create dall'uomo da un insieme di immagini raffiguranti della frutta, e quindi addestrare questo modello per la segmentazione delle immagini. Successivamente, la CNN è utilizzata per conteggiare le immagini biforcate e fornire un'approssimazione del numero di frutti. L'ultima fase del lavoro prevede l'applicazione di un'equazione di regressione per mappare la stima del conteggio intermedio dei frutti al conteggio finale delle etichette generate dall'uomo. La combinazione del Deep Learning con il rilevamento di blob aumenta l'accuratezza e l'efficienza.
+
+Il metodo di classificazione del suolo è utilizzato per identificare l'uso e la copertura del suolo, per la valutazione dei rischi legati ai disastri e per l'agricoltura e il cibo. L'idea generale del metodo di deep learning è quella di integrare le informazioni sviluppate da diverse fonti eterogenee utilizzando tecniche di apprendimento automatico per fornire capacità di elaborazione delle informazioni e rappresentazione visiva. Questo processo include quattro fasi: 
+
+\begin{enumerate}
+    \item filtraggio del rumore e clustering dei dati;
+    \item pulizia della copertura terrestre;
+    \item post-elaborazione delle mappe;
+    \item analisi geo-spaziale.
+\end{enumerate}
+
+Kussul ed altri hanno introdotto un approccio multi-livello di apprendimento profondo per la classificazione dell'uso del suolo e dei tipi di coltivazioni utilizzando immagini satellitari multi-temporali multi-sorgente.
+
+Oggi, nel settore agricolo stanno emergendo nuove tecnologie; ad esempio, vengono utilizzati veicoli aerei senza pilota per l'elaborazione di immagini di alta qualità. Per gli agricoltori, gestire macchine altamente autonome è piuttosto difficile. Pertanto, la rilevazione automatica dei rischi in tempo reale con queste macchine, con un'alta affidabilità, diventa una necessità. Per un uso sostenibile del territorio, è necessario considerare alcune condizioni, come la pianificazione per la riduzione delle emissioni di CO2, la diminuzione del degrado del suolo e il miglioramento dei rendimenti economici utilizzando dati preziosi dai satelliti. Per la presa di decisioni nell'agricoltura di precisione e nell'agroindustria, le CNN e l'algoritmo genetico sono diventati metodi convenienti con l'uso di immagini satellitari tradotte. La previsione meteorologica è uno dei principali fattori per gli agricoltori, che può essere sfruttato utilizzando le CNN. Allo stesso modo, la stima del rendimento delle colture è uno dei principali fattori per gli agricoltori, i consumatori e il governo, che deve essere effettuato prima del raccolto delle colture. Le CNN non vengono utilizzate solo per la stima delle colture o per scopi agricoli, ma anche per classificare il comportamento degli animali.
+
+\subsubsection{Recurrent Neural Network}
+
+Le \textit{Recurrent Neural Network (RNN)} sono un tipo di rete neurale in cui l'output generato in un passaggio temporale precedente viene utilizzato come input nel passaggio successivo. Questo approccio trova applicazioni in una serie di campi, come il riconoscimento vocale, il riconoscimento della scrittura, e l'analisi di sequenze di dati.
+
+In particolare, le reti neurali generative basate su RNN sono in grado di generare automaticamente codici di programmazione che soddisfano un obiettivo predefinito. Il processo di funzionamento di una RNN coinvolge la presentazione di un input al modello. Questo input viene elaborato attraverso uno strato di input, quindi inviato a uno strato nascosto che svolge la modellazione della sequenza e l'addestramento in avanti o all'indietro. Anche se possono essere presenti più strati nascosti, l'ultimo strato nascosto trasmette il risultato elaborato allo strato di output.
+
+Un'evoluzione importante delle RNN è rappresentato dalle \textit{RNN a memoria a lungo e breve termine} (o \textit{Long Short-Term Memory} o \textit{LSTM}), che sono ampiamente utilizzate. Queste sono particolarmente efficaci per il trattamento di sequenze di dati che richiedono la memorizzazione di informazioni a lungo termine o dettagli relativi agli eventi più recenti. Le applicazioni delle RNN includono la modellazione e la previsione del linguaggio, il riconoscimento vocale, la traduzione automatica e il riconoscimento e la traduzione di immagini.
+
+Le LSTM, o celle, sono l'ultima evoluzione delle RNN e gestiscono in modo intelligente l'input dello stato precedente decidendo quali informazioni conservare e quali scartare. Integrando informazioni dal passato, dal presente e dall'input attuale, sono in grado di fare previsioni più precise. 
+
+La classificazione della copertura del suolo è un'area chiave nell'agricoltura, che coinvolge il riconoscimento del tipo e della qualità del terreno. In passato, molte applicazioni si basavano su osservazioni mono-temporali; questi metodi dipendevano da vari fattori, come il tempo atmosferico.
+
+Per affrontare le sfide legate alle reti neurali ricorrenti (RNN) è stato introdotto un modello noto come \textit{NARX}, che sta per processo di modello auto-regressivo non lineare con input esogeni. In questo metodo, i valori di previsione precedenti sono considerati come input, mentre i valori attuali e precedenti sono considerati come input esogeni. Il sistema valuta non solo gli input indipendenti ma anche la risposta precedente del sistema, il che rende il sistema più potente. Utilizzando il modello NARX, è stato sviluppato un altro modello, il \textit{NARXNN}, per l'analisi delle serie temporali dell'indice di area fogliare (LAI). Kurumatani nel 2018, ha proposto una tecnica per prevedere il prezzo dei prodotti agricoli utilizzando le RNN.
+
+Le RNN vengono anche utilizzate per prevedere il tempo atmosferico. Biswas e altri nel 2014 hanno progettato tre modelli per la previsione del tempo: il modello di rete neurale auto-regressiva non lineare con input esogeni (NARX NN), il modello di ragionamento basato su casi e il modello di ragionamento basato su casi segmentati. Palangpour ed altri nel 2016 hanno sviluppato un modello per identificare la posizione degli animali nella foresta. In questo modello, è stato utilizzato l'algoritmo di ottimizzazione dello sciame di particelle combinato con il modello RNN; i risultati ottenuti da questo modello presentano meno errori.
+
+\subsubsection{Generative adversarial Networks}
+
+Le \textit{Generative Adversarial Networks (GAN)} rappresentano un'innovazione significativa nell'ambito dell'apprendimento automatico. Si tratta di un tipo di apprendimento non supervisionato che incorpora tecniche avanzate per identificare somiglianze o modelli nei dati generati dal sistema. Le GAN sono modelli intelligenti che risolvono problemi di generazione di dati attraverso l'interazione di due sottomodelli nel contesto dell'apprendimento supervisionato. Questi sistemi generativi possono essere addestrati per creare rappresentazioni visive, come illustrazioni o immagini.
+
+Le GAN costituiscono un campo affascinante in rapida crescita, grazie al loro potenziale nell'ambito della generazione di dati realistici. Questi modelli trovano applicazioni in svariati domini, ad esempio nella trasformazione di immagini, come la conversione di scene estive in scene invernali o di immagini diurne in immagini notturne, al fine di generare immagini che appaiono autentiche e foto-realistiche agli occhi degli osservatori.
+
+La GAN è considerata una delle reti neurali più utili in molti campi. Principalmente, la GAN viene utilizzata per trovare la perdita di dettagli nell'elaborazione delle immagini causata dalla riduzione di campionamento. Quando un'immagine viene compressa, alcune informazioni possono andare perse, o la qualità di quell'immagine si deteriora; quindi potremmo aver bisogno di recuperare tutti i dettagli originali. Per questo recupero, viene definita una \textit{funzione di perdita perpetua} composta da perdita avversa e perdita di contenuto. Questa funzione viene, quindi, confrontata con il \textit{Mean Square Error (MSE)} pixel per pixel. Lavorando su un gran numero di immagini, questo modello è in grado di migliorare la qualità delle immagini altamente compresse. Ciò diventa importante in tutti i modelli che contengono lavori di elaborazione delle immagini, principalmente in agricoltura, perché alcune applicazioni dipendono dalle immagini da telerilevamento.
+
+\subsection{Vantaggi e svantaggi in agricoltura}
+
+In generale, nell'apprendimento automatico, non è facile analizzare i dati non strutturati. Per questo tipo di analisi di dati, l'applicazione dei metodi Deep Learning risulta più utile, in quanto consente di utilizzare diversi formati di dati per far funzionare gli algoritmi. In generale, i lavoratori possono stancarsi, diventare negligenti o trascurare i dettagli, ma nei modelli Deep Learning questo non accade. L'algoritmo eseguirà migliaia di cicli di lavoro senza errori, il tutto in un breve lasso di tempo. Inoltre, la qualità del lavoro non verrà compromessa a meno che i dati inseriti dall'utente non presentino problemi.
+
+Nell'approccio di apprendimento tradizionale, l'identificazione delle caratteristiche deve essere accurata, mentre i modelli Deep Learning hanno la capacità di creare nuove caratteristiche autonomamente. Di solito, la risoluzione dei problemi nell'apprendimento automatico avviene suddividendo task complessi in task più piccoli e combinando i risultati di tutti i task minori per ottenere l'output finale. Invece, nel Deep Learning, i task vengono risolti su una base \textit{end-to-end}, ovvero l'intero flusso di lavoro viene gestito in un'unica procedura.
+
+Il Deep Learning richiede una grande quantità di dati o informazioni ed è costoso utilizzarne un modello. Uno dei principali svantaggi è che non siamo in grado di capire come avviene l'analisi all'interno del modello. Questo è spesso definito come \textit{scatola nera}, ma in alcune circostanze è importante conoscere l'algoritmo di analisi, poiché l'interpretabilità è necessaria in alcuni settori.
+
+Oggi, con l'espansione dell'apprendimento automatico in tutti i settori in modo notevole, la principale preoccupazione è che l'apprendimento automatico possa sostituire il lavoro umano e portare gli esseri umani verso la disoccupazione o la schiavitù.
+
+\subsection{IoT in agricoltura}
+\subsubsection{Introduzione}
+
+L'\textit{Internet delle cose}, o \textit{Internet Of Things (IoT)}, trova applicazioni in una vasta gamma di settori; nel campo agricolo rappresenta un'opportunità per la modernizzazione e l'ottimizzazione delle pratiche agricole. Questa iniziativa ha aperto nuove prospettive nella ricerca avanzata nel settore. I dati sono raccolti da dispositivi mobili e sensori, e la trasmissione di tali dati avviene tramite tecnologie a radiofrequenza. Per garantire l'affidabilità e l'efficienza delle reti di sensori, vengono utilizzati metodi di verifica e ottimizzazione.
+
+L'automazione dei processi e l'analisi predittiva sono possibili grazie all'impiego di approcci basati sui big data, il che permette di migliorare molte attività in tempo reale nel settore agricolo. Di seguito, si illustreranno le tecnologie IoT utilizzate per sviluppare sistemi di supporto per le diverse fasi delle operazioni agricole, esplorando le applicazioni dell'IoT in agricoltura, affrontando le sfide che questa tecnologia deve superare e delineando le opportunità future per il suo sviluppo nel settore agricolo.
+
+\subsubsection{Dispositivi IoT}
+
+Questa sezione esamina il ruolo dell'Internet delle cose (IoT) nell'ambito dell'agricoltura, esplora gli sforzi di ricerca correlati nonché l'applicazione delle tecnologie IoT in questo settore. L'analisi critica svolge un ruolo guida nell'adozione di queste nuove idee sia nell'ambito dell'agricoltura urbana che in quello dell'agricoltura di precisione.
+
+Il termine "Internet of Things" (IoT) è emerso come una tecnologia nel 1999 ed è da allora diventato un argomento di grande interesse in vari settori. Le previsioni indicano che il numero di oggetti connessi all'IoT crescerà notevolmente, passando dai 20 miliardi del 2015 a una stima di 75 miliardi entro il 2025. Questa evoluzione ha portato oggetti del mondo reale a essere connessi a Internet, consentendo il trasferimento di dati tramite il cloud.
+
+Le capacità di comunicazione sono fondamentali per i dispositivi IoT, e ciò porta a numerose comunicazioni machine-to-machine (M2M). I dispositivi IoT possono scambiare dati tra di loro e con le applicazioni connesse, oltre a raccogliere dati da dispositivi e processi locali. Questi dati possono essere inviati a server centralizzati o in un cloud. I sistemi IoT offrono una vasta gamma di servizi, tra cui la modellazione, il controllo dei dispositivi e l'analisi dei dati. Il blocco di gestione dei dispositivi IoT è responsabile della gestione generale del sistema, mentre il blocco di sicurezza garantisce la protezione attraverso autenticazione e autorizzazione. Attualmente, il blocco delle applicazioni consente agli utenti di visualizzare e analizzare lo stato del sistema e di fare previsioni sul futuro.
+
+Le applicazioni dell'IoT nell'ambito agricolo coprono una vasta gamma di scenari. I ricercatori hanno sviluppato applicazioni basate su reti di sensori scalari per il monitoraggio e il controllo delle infrastrutture agricole, come le serre, nonché per la cattura di immagini a distanza e il rilevamento di insetti utilizzando reti di sensori multimediali. Inoltre, sono state sviluppate applicazioni per il rilevamento delle malattie delle piante tramite l'elaborazione delle immagini, per la tracciabilità dei prodotti agricoli e per l'identificazione remota utilizzando reti basate su tag, come l'identificazione a radiofrequenza e la \textit{Near Field Communication} (NFC).
+
+Tuttavia, nei terreni agricoli, dove le colture e altri fattori possono variare la loro posizione nel tempo, possono verificarsi interferenze nella comunicazione tra i nodi dell'IoT. Per ovviare a questo problema, vengono utilizzati dispositivi \textit{embedded} a bassa potenza, che sono noti per la loro stabilità a lungo termine. Il numero di dispositivi periferici, tra cui sensori e attuatori, da utilizzare dipende dal numero di ingressi/uscite digitali e analogiche richieste per il monitoraggio e il controllo delle attività agricole.
+
+I dispositivi IoT vantano una capacità di autoconfigurazione che permette a un gran numero di essi di lavorare in modo collaborativo per fornire servizi specifici, come il monitoraggio meteorologico. Questi dispositivi sono in grado di configurarsi autonomamente, stabilire la connettività tra di loro e applicare gli aggiornamenti software più recenti con una minima interferenza da parte dell'utente. Inoltre, essi supportano una varietà di protocolli di comunicazione che consentono loro di interagire con altri dispositivi e sistemi.
+
+Ciascun dispositivo IoT è identificato in modo univoco attraverso un identificatore specifico, come un \textit{indirizzo IP} o un \textit{Uniform Resource Identifier (URI)}. Grazie all'infrastruttura di controllo, configurazione e gestione, gli utenti possono accedere ai dispositivi IoT, verificare il loro stato e gestirli a distanza.
+
+L'intelligenza decisionale integrata nei dispositivi IoT contribuisce all'efficienza energetica complessiva della rete, aumentandone, così, la durata operativa.
+
+\subsubsection{Benefici in agricoltura}
+
+L'Internet delle cose (IoT) svolge un ruolo cruciale nell'agricoltura. Gli agricoltori stanno adottando sia risorse hardware che software, sfruttando grandi quantità di dati nelle aree rurali, semi-rurali e urbane. L'uso di decisioni basate su dati in tempo reale è essenziale per ridurre i costi e ottimizzare l'utilizzo di risorse, e consente di misurare la qualità della produzione alimentare. Inoltre, l'IoT apre la possibilità di stabilire un rapporto diretto con i consumatori attraverso modelli di business adeguati.
+
+L'adozione di monitoraggio delle colture basato sulla tecnologia contribuisce a ridurre i costi e le perdite di attrezzature agricole. I sensori vengono impiegati in sistemi di irrigazione automatica per monitorare fattori come umidità, temperatura e umidità del suolo, fornendo dati per ulteriori analisi e ottimizzazioni. I sistemi di supporto alle decisioni elaborano una vasta quantità di dati per migliorare la produttività e l'efficienza operativa, contribuendo così, a ridurre la necessità di manodopera intensiva. La ricerca suggerisce che l'agricoltura basata sulla tecnologia non solo aumenta la produttività, ma migliora anche le condizioni finanziarie e il benessere degli agricoltori. L'automazione completa dei sistemi di irrigazione aiuta a ottimizzare l'uso dell'acqua, grazie all'uso di reti di sensori wireless che raccolgono dati su umidità, temperatura e altre variabili da diverse zone del campo.
+
+\subsection{Applicazioni dell'IoT in agricoltura}
+
+La tecnologia svolge un ruolo cruciale nell'agricoltura. Questo sistema gestisce la raccolta dei dati, l'analisi statistica, l'archiviazione e il processo decisionale basato sui dati raccolti. Lo sviluppo delle tecnologie dei sensori e di altri dispositivi elettronici ha ridotto i costi e ha portato numerosi vantaggi alle pratiche agricole tradizionali. Questa evoluzione dai metodi agricoli convenzionali all'agricoltura di precisione e micro-precisione ha portato a notevoli miglioramenti nella produttività agricola.
+
+L'uso dell'IoT in agricoltura si concentra sull'automazione e sulla fornitura di strumenti decisionali che integrano prodotti, conoscenze e servizi per migliorare la produttività, la qualità e i profitti agricoli.
+
+L'IoT ha diverse applicazioni in agricoltura, ad esempio:
+
+\begin{itemize}
+    \item l'uso corretto di pesticidi e fertilizzanti contribuisce ad aumentare la qualità dei raccolti e a ridurre i costi dell'agricoltura;
+    \item l'uso dell'acqua in agricoltura e nelle attività connesse avviene attraverso sistemi di gestione dell'irrigazione ottimizzati;
+    \item la tecnologia dei sensori wireless e le comunicazioni hanno contribuito al monitoraggio della qualità dell'acqua su parametri quali temperatura, pH, torbidità, conduttività e ossigeno disciolto;
+    \item il monitoraggio della mandria di mucche e di altri animali al pascolo può essere effettuato utilizzando l'IoT;
+    \item l'agricoltura e le serre sono collegate tra loro; l'aumento della temperatura del clima dovuto ai gas serra e il suo effetto sull'agricoltura sono monitorati;
+    \item il monitoraggio del suolo viene effettuato utilizzando l'IoT;
+    \item la conoscenza del suolo è importante per la produzione di cereali;    
+    \item la gestione della catena di approvvigionamento è necessaria per ottenere profitti che possono essere monitorati dall'IoT.
+\end{itemize}

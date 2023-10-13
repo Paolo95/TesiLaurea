@@ -1,0 +1,20 @@
+\begin{thebibliography}{2}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
+\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+
+\bibitem[{Patel(2021)}]{Patel_2021}
+\textsc{Patel, G.~S.} (2021), \emph{Smart agriculture emerging pedagogies of
+  deep learning, Machine Learning and internet of things}, CRC Press.
+
+\bibitem[{Zhang(2016)}]{Zhang_2016a}
+\textsc{Zhang, Q.} (2016), \emph{A History of Precision Agricolture}, p.
+  1–13, Taylor \& Francis.
+
+\end{thebibliography}
