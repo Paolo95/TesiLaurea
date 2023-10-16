@@ -6,24 +6,25 @@ In questo capitolo, si esplorerà in dettaglio la progettazione software dell'ap
 
 Successivamente, si presenterà un diagramma di sequenza che illustrerà le interazioni dinamiche tra le classi principali implementate nell'app. Questo permetterà di comprendere in dettaglio le operazioni svolte dall'applicazione durante il processo di riconoscimento degli oggetti.
 
-Inoltre, si descriveranno le animazioni implementate in Unity, che contribuiscono a rendere l'esperienza utente più coinvolgente e interattiva.
-
-Per completare il quadro della progettazione, si esplorerà anche la struttura del database utilizzato per memorizzare informazioni cruciali sulle bottiglie di vino. Questa parte è essenziale per garantire un recupero e una gestione efficiente dei dati all'interno dell'app Android.
+Inoltre, si descriveranno le animazioni implementate in Unity, che contribuiscono a rendere l'esperienza utente più coinvolgente e interattiva. Per completare il quadro della progettazione, si esplorerà anche la struttura del database utilizzato per memorizzare informazioni cruciali sulle bottiglie di vino. Questa parte è essenziale per garantire un recupero e una gestione efficiente dei dati all'interno dell'app Android.
 }
 \end{preamble}
 
 \section{Scelte progettuali effettuate}
 
-Nel capitolo precedente, si è fornita una panoramica degli strumenti software utilizzati, insieme alle loro funzionalità principali. In questa sezione, si descriveranno le versioni e le modalità di utilizzo di questi strumenti, offrendo una prima documentazione progettuale dell'applicazione:
+\section{Versioni e Modalità di Utilizzo degli Strumenti}
+
+Nel capitolo precedente, è stata fornita un'ampia panoramica degli strumenti software utilizzati insieme alle rispettive funzionalità principali. In questa sezione, verranno descritte le versioni e le modalità di utilizzo degli strumenti, nello specifico:
 
 \begin{itemize}
-\item \textit{Unity}: si è optato per l'utilizzo della versione dell'editor \textit{2022.3.9f1 LTS (Long-Term-Support)} al fine di garantire maggiore stabilità, rinunciando alle ultime versioni.
-\item \textit{Vuforia Engine}: la versione utilizzata è la \textit{10.17.4}.
-\item \textit{PolyCam}: l'applicazione offre diverse modalità d'uso, ma in questo contesto si è selezionata la \textit{Photo Mode}. Si sono acquisite oltre 100 fotografie della bottiglia della Cantina Strappelli tramite smartphone per creare un modello tridimensionale dell'oggetto, comprensivo di texture per il riconoscimento del colore e grafica dell'etichetta della bottiglia di vino.
-\item \textit{Blender}: poiché non sono richieste funzionalità avanzate di Blender per il progetto, si è installata l'ultima versione disponibile, ovvero la 3.6.
-\item \textit{Vuforia Model Target Generator}: anche in questo caso, si è utilizzata l'ultima versione disponibile dell'applicazione, la \textit{10.17.4}.
-\item \textit{OpenWeather}: nel progetto, si è utilizzata la versione 2.5 dell'API di OpenWeather.
+  \item \textit{Unity}: è stata selezionata la versione dell'editor \textit{Unity 2022.3.9f1 LTS (Long-Term-Support)} al fine di garantire maggiore stabilità, rinunciando alle ultime versioni.
+  \item \textit{Vuforia Engine}: è stata impiegata la versione \textit{10.17.4}.
+  \item \textit{PolyCam}: in questo contesto, è stata scelta la \textit{Photo Mode} dell'applicazione. Sono state acquisite oltre 100 fotografie della bottiglia della Cantina Strappelli tramite uno smartphone al fine di creare un modello tridimensionale dell'oggetto, comprensivo di texture per il riconoscimento del colore e la grafica dell'etichetta della bottiglia di vino.
+  \item \textit{Blender}: poiché non sono richieste funzionalità avanzate di Blender per il progetto, è stata installata l'ultima versione disponibile, ossia la \textit{3.6}.
+  \item \textit{Vuforia Model Target Generator}: anche in questo caso, è stata utilizzata l'ultima versione disponibile dell'applicazione, la \textit{10.17.4}.
+  \item \textit{OpenWeather}: nel progetto, è stata utilizzata la versione 2.5 dell'API di OpenWeather.
 \end{itemize}
+
 
 \section{Diagrammi delle classi}
 
@@ -32,14 +33,14 @@ Un \textit{diagramma delle classi} (o \textit{Class Diagram} in inglese), è uno
 Un diagramma delle classi contiene il nome della classe e tre sezioni principali:
 
 \begin{itemize}
-    \item \textit{Nome della classe}: è il nome della classe che rappresenta un concetto o un oggetto all'interno del sistema software;
-    \item \textit{Attributi}: gli attributi sono le variabili o i campi dati che appartengono alla classe. Sono elencati sotto il nome della classe e possono includere tipi di dati e valori iniziali;
+    \item \textit{Nome della classe}: è il nome della classe che rappresenta un concetto o un oggetto all'interno del sistema software.
+    \item \textit{Attributi}: gli attributi sono le variabili che appartengono alla classe. Sono elencati sotto il nome della classe e possono includere tipi di dati e valori iniziali.
     \item \textit{Metodi}: i metodi sono le funzioni o i comportamenti associati alla classe. Sono elencati sotto gli attributi e mostrano i dettagli sulla firma dei metodi, inclusi i parametri e i tipi di ritorno.
 \end{itemize}
 
 \subsection{La classe IotAPICaller}
 
-La classe \textit{IotAPICaller} è responsabile della gestione delle chiamate API alla stazione IoT situata nel campo dell'azienda vitivinicola Strappelli. Come precedentemente menzionato nel capitolo precedente, la stazione IoT carica i dati in tempo reale su una piattaforma cloud, la quale ospita un'appostia API che consente l'accesso ai dati.
+La classe \textit{IotAPICaller} è responsabile della gestione delle chiamate API per ottenere i dati provenienti dalla stazione IoT situata nel campo dell'azienda vitivinicola Strappelli. Come precedentemente menzionato nel capitolo precedente, la stazione IoT carica i dati in tempo reale su una piattaforma cloud, la quale ospita un'appostia API che consente l'accesso ai dati.
 
 L'API restituisce i dati in formato JSON, strutturati in modo simile ad una tabella di un database relazionale. Questa struttura comprende un'intestazione e un corpo di tabella, con l'aggiunta di due campi aggiuntivi, denominati \textit{status} e \textit{rows}.
 
@@ -47,7 +48,7 @@ La classe \textit{IotAPICaller} effettua una richiesta HTTP POST con una query S
 
 Un esempio della struttura dei dati è riportato di seguito:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=File JSON restituito dall'API della stazione IoT, label=lst:iotjson, captionpos=b]
  {
     "status":"succ",
     "head":
@@ -121,31 +122,31 @@ Il campo \textit{data} contiene al suo interno i valori associati all'intestazio
 	\label{4fig:classDiagramIotAPICaller}
 \end{figure}
 
-La classe IotAPICaller, mostrata nel Class Diagram in figura \ref{4fig:classDiagramIotAPICaller}, ha i seguenti attributi:
+La classe IotAPICaller (Figura \ref{4fig:classDiagramIotAPICaller}) ha i seguenti attributi:
 
 \begin{itemize}
-    \item \textit{txtLeafTemp}: rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo alla temperatura della foglia; 
-    \item \textit{txtLeafHum}: rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo all'umidità della foglia;
-    \item \textit{txtTemp}:rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo alla temperatura atmosferica;
-    \item \textit{txtHum}: rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo all'umidità atmosferica;
-    \item \textit{txtRain}: rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo ai millimetri di pioggia giornalieri;
-    \item \textit{txtLatestUpd}: rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo al timestamo dei dati presentati nell'applicazione.
+\item \textit{txtLeafTemp}: temperatura della foglia nell'interfaccia grafica di Unity.
+\item \textit{txtLeafHum}: umidità della foglia nell'interfaccia grafica di Unity.
+\item \textit{txtTemp}: temperatura atmosferica nell'interfaccia grafica di Unity.
+\item \textit{txtHum}: umidità atmosferica nell'interfaccia grafica di Unity.
+\item \textit{txtRain}: millimetri di pioggia giornalieri nell'interfaccia grafica di Unity.
+\item \textit{txtLatestUpd}: timestamp dei dati presentati nell'applicazione Unity.
 \end{itemize}
 
-Ogni variabile ha l'attributo \textit{SerializeField} per renderla privata e visibile nell'editor di Unity in modo che possa essere vista e modificata nel valore direttamente nell'interfaccia grafica, anche se il campo è dichiarato come privato.
+Ogni variabile ha l'attributo \textit{SerializeField} per renderla privata e visibile nell'editor di Unity in modo tale da essere vista e modificata nel valore direttamente nell'interfaccia grafica, anche se il campo è dichiarato come privato.
 
 Infine, la classe contiene i seguenti metodi:
 
 \begin{itemize}
-    \item \textit{Start}: è il primo metodo che viene eseguito all'avvio dello script nella pagina "Racconta" dell'applicazione. La chiamata a questo metodo permette di preparare la richiesta HTTP in modo corretto inserendo l'intestazione della chiamata HTTP e il body con il testo della query SQL che permette di recuperare i dati;
-    \item \textit{UpdateData}: questo metodo permette di eseguire un'ulteriore chiamata API per consentire un aggiornamento dei dati visualizzati nell'applicazione.
+    \item \textit{Start}: è il primo metodo eseguito al lancio dello script nella pagina "Racconta" dell'applicazione. Inizializza correttamente una richiesta HTTP, impostando l'intestazione e il corpo con la query SQL per il recupero dei dati.
+    \item \textit{UpdateData}: aggiorna i dati visualizzati nell'applicazione eseguendo una chiamata API aggiuntiva.
 \end{itemize}
 
 \subsection{La classe OpenWeatherAPICaller}
 
-La classe \textit{OpenWeatherAPICaller} si occupa di gestire i dati che provengono dall'API di OpenWeather. Quest'ultima restituisce i dati in formato JSON. Un esempio è fornito di seguito:
+La classe \textit{OpenWeatherAPICaller} (Figura \ref{4fig:classDiagramOpenWeatherAPICaller}) si occupa di gestire i dati che provengono dall'API di OpenWeather. Quest'ultima restituisce i dati in formato JSON. Un esempio è fornito di seguito:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=File JSON restituito dall'API OpenWeather, label=lst:openweatherjson, captionpos=b]
 {
     "coord":
             {
@@ -203,7 +204,7 @@ La classe \textit{OpenWeatherAPICaller} si occupa di gestire i dati che provengo
 Il file JSON presenta diversi campi tra cui:
 
 \begin{itemize}
-    \item \textit{coord}: questo campo contiene le coordinate geografiche della località.
+    \item \textit{coord}: contiene le coordinate geografiche della località.
     \begin{itemize}
         \item \textit{lon}: il campo rappresenta la longitudine del campo da monitorare.
         \item \textit{lat}: il campo rappresenta la latitudine del campo da monitorare.
@@ -220,7 +221,7 @@ Il file JSON presenta diversi campi tra cui:
     \item \textit{main}: questo campo contiene informazioni sulle condizioni meteorologiche principali.
     \begin{itemize}
         \item \textit{temp}: rappresenta la temperatura attuale in gradi Celsius.
-        \item \textit{feels\_like}: rappresenta la temperatura percepita in gradi Celsius.
+        \item \textit{feels\_like}: è la temperatura percepita in gradi Celsius.
         \item \textit{temp\_min}: rappresenta la temperatura minima prevista in gradi Celsius.
         \item \textit{temp\_max}: immagazzina la temperatura massima prevista in gradi Celsius.
         \item \textit{pressure}: questo campo rappresenta la pressione atmosferica in hPa.
@@ -248,7 +249,7 @@ Il file JSON presenta diversi campi tra cui:
         \item \textit{type}: è tipo di sistema.
         \item \textit{id}: rappresenta l'ID del sistema.
         \item \textit{country}: rappresenta il paese associato a questa località.
-        \item \textit{sunrise}: rappresneta il timestamp Unix del sorgere del sole.
+        \item \textit{sunrise}: rappresenta il timestamp Unix del sorgere del sole.
         \item \textit{sunset}: questo campo rappresenta il timestamp Unix del tramonto.
     \end{itemize}
         
@@ -273,27 +274,27 @@ Per svolgere questa operazione, fa uso di classi strutturate in modo da organizz
 Le proprietà presenti nella classe OpenWeatherAPICaller sono:
 
 \begin{itemize}
-    \item \textit{openWeatherApiKey}: contiene la chiave che consente l'utilizzo dell'API OpenWeather;
-    \item \textit{longitude}: questa proprietà contiene la longitudine del campo da monitorare;
-    \item \textit{latitude}: questa proprietà contiene la latitudine del campo da monitorare;
-    \item \textit{mongoDBConnector}: contiene l'istanza della classe MongoDBConnector che si occupa di gestire la connessione con il database MongoDB (verrà descritta approfonditamente in seguito);
-    \item \textit{txtHealthDescription}: rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo alla descrizione sistetica dello stato di salute del vigneto;
-    \item \textit{txtLatestUpd}: rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo all'ultimo aggiornamento dei dati ottenuti dall'API OpenWeather;
-    \item \textit{image}: contiene il riferimento all'immagine presente nell'interfaccia grafica Unity che mostra due tipologie di immagini in base allo stato del vigneto (in salute o in stato di allerta);
+    \item \textit{openWeatherApiKey}: contiene la chiave che consente l'utilizzo dell'API OpenWeather.
+    \item \textit{longitude}: questa proprietà contiene la longitudine del campo da monitorare.
+    \item \textit{latitude}: questa proprietà contiene la latitudine del campo da monitorare.
+    \item \textit{mongoDBConnector}: contiene l'istanza della classe MongoDBConnector che si occupa di gestire la connessione con il database MongoDB (verrà descritta approfonditamente in seguito).
+    \item \textit{txtHealthDescription}: rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo alla descrizione sistetica dello stato di salute del vigneto.
+    \item \textit{txtLatestUpd}: rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo all'ultimo aggiornamento dei dati ottenuti dall'API OpenWeather.
+    \item \textit{image}: contiene il riferimento all'immagine presente nell'interfaccia grafica Unity che mostra due tipologie di immagini in base allo stato del vigneto (in salute o in stato di allerta).
 \end{itemize}
 
 Per quanto riguarda i metodi presenti nella classe, sono riportati di seguito:
 
 \begin{itemize}
-    \item \textit{Start()}: è il metodo che viene eseguito per prima nel lancio dello script in Unity. Il metodo si occupa di recuperare dal database la longitudine e latitudine del campo associato alla bottiglia di vino riconosciuta;
-    \item \textit{GetWeatherData()}: il metodo si occupa di effettuare la chiamata all'API di OpenWeather per poi memorizzare i risultati nelle variabili associate a ciascun campo della stringa JSON restituita dall'API;
-    \item \textit{UpdateOpenWeatherData}: aggiorna i dati provenienti all'API di OpenWeather richiamando il metodo \textit{GetWeatherData};
-    \item \textit{UnixTimeStampToDateTime}: è un metodo che converte un timestamo Unix in una data nel formato \textit{DateTime}.
+    \item \textit{Start()}: è il metodo che viene eseguito per prima nel lancio dello script in Unity. Esso si occupa di recuperare la longitudine e latitudine dal database del campo associato alla bottiglia di vino riconosciuta.
+    \item \textit{GetWeatherData()}: il metodo si occupa di effettuare la chiamata all'API di OpenWeather per poi memorizzare i risultati nelle variabili associate a ciascun campo della stringa JSON restituita dall'API.
+    \item \textit{UpdateOpenWeatherData}: aggiorna i dati provenienti all'API di OpenWeather richiamando il metodo \textit{GetWeatherData}.
+    \item \textit{UnixTimeStampToDateTime}: è un metodo che converte un timestamp Unix in una data nel formato \textit{DateTime}.
 \end{itemize}
 
 \subsection{La classe ScriptManager}
 
-La classe \textit{ScriptManager} si occupa di gestire la sincronizzazione del testo con l'audio della recensione del sommelier. Il Class Diagram è mostrato nella figura \ref{4fig:classDiagramScriptManager}.
+La classe \textit{ScriptManager} (Figura \ref{4fig:classDiagramScriptManager}) si occupa di gestire la sincronizzazione del testo con l'audio della recensione del sommelier.
 
 \begin{figure}[h]
 	\centering
@@ -316,28 +317,28 @@ Gli attributi della classe sono:
     \item \textit{scriptList}: rappresenta una lista di stringhe per memorizzare l'intero script.
     \item \textit{autoScrollRect}: l'attributo rappresenta un riferimento ad un componente Unity ScrollRect. Questo attributo è serializzato in modo che possa essere assegnato nell'editor Unity. 
     \item \textit{contentRectTransform}: rappresenta un riferimento ad un componente Unity RectTransform utilizzato per gestire il layout del contenuto all'interno del ScrollRect.
-    \item \textit{mongoDBConnector}: rappredenta un oggetto della classe \textit{MongoDBConnector} utilizzato per ottenere dati dal database MongoDB.
+    \item \textit{mongoDBConnector}: rappresenta un oggetto della classe \textit{MongoDBConnector} utilizzato per ottenere dati dal database MongoDB.
 \end{itemize}
 
 I metodi presenti nella classe sono i seguenti:
 
 \begin{itemize}
     \item \textit{Start()}: questo metodo è chiamato all'avvio del GameObject. In particolare, acquisisce il testo della recensione associata alla bottiglia riconosciuta dal database MongoDB e visualizza il testo nello script nella variabile txtRecensione.
-    \item \textit{Update()}:Questo metodo è chiamato ad ogni frame dell'applicazione. Calcola il tempo corrente, identifica i frammenti di script da evidenziare in base al tempo corrente di esecuzione dell'audio della recensione, aggiorna il testo in txtRecensione, calcola la posizione di scorrimento verticale per la visibilità del testo evidenziato e aggiorna il valore della barra di scorrimento verticale del componente autoScrollRect in base alla posizione del testo evidenziato.
+    \item \textit{Update()}: questo metodo è chiamato ad ogni frame dell'applicazione. Calcola il tempo corrente, identifica i frammenti di script da evidenziare in base al tempo corrente di esecuzione dell'audio della recensione, aggiorna il testo in txtRecensione, calcola la posizione di scorrimento verticale per la visibilità del testo evidenziato e aggiorna il valore della barra di scorrimento verticale del componente autoScrollRect in base alla posizione del testo evidenziato.
 \end{itemize}
 
 \subsection{La classe MongoDBConnector}
 
-La classe \textit{MongoDBConnector} si occupa di gestire la connessione con il database MongoDB che contiene i dati relativi al prodotto vitivinicolo identificato. La struttura del database verrà descritta in seguito.
+La classe \textit{MongoDBConnector} (Figura \ref{4fig:classDiagramMongoDBConnector}) si occupa di gestire la connessione con il database MongoDB che contiene i dati relativi al prodotto vitivinicolo identificato. La struttura del database verrà descritta in seguito.
 
 In figura \ref{4fig:classDiagramMongoDBConnector} è mostrato il Class Diagram della classe MongoDBConnector di cui si andranno a descrivere attributi e metodi presenti.
 
 La classe presenta quattro attributi, tra cui:
 
 \begin{itemize}
-    \item \textit{apiKey}: contiene la chiave API che consente di accedere al database MongoDB;
-    \item \textit{url}: l'attributo contiene l'URL dell'API di MongoDB che consente di effettuare la ricerca nel database di un particolare record con l'operazione \textit{findOne};
-    \item \textit{jsonData}: contiene un attributo che memorizza i dati JSON da inviare nel corpo della richiesta HTTP all'API di MongoDB;
+    \item \textit{apiKey}: contiene la chiave API che consente di accedere al database MongoDB.
+    \item \textit{url}: l'attributo contiene l'URL dell'API di MongoDB che consente di effettuare la ricerca nel database di un particolare record con l'operazione \textit{findOne}.
+    \item \textit{jsonData}: contiene un attributo che memorizza i dati JSON da inviare nel corpo della richiesta HTTP all'API di MongoDB.
     \item \textit{onDataReceived}: memorizza un attributo che contiene una funzione di callback da eseguire quando vengono ricevuti i dati dal database MongoDB.
 \end{itemize}
 
@@ -352,7 +353,7 @@ La classe presenta quattro attributi, tra cui:
 La classe contiene un solo metodo chiamato \textit{GetDataAsync} utilizzato per avviare un processo di recupero dati asincrono che accetta due parametri:
 
 \begin{itemize}
-    \item \textit{callback}: un oggetto di tipo Action che specifica la funzione di callback da eseguire quando vengono ricevuti dati;
+    \item \textit{callback}: un oggetto di tipo Action che specifica la funzione di callback da eseguire quando vengono ricevuti dati.
     \item \textit{queryType}: una stringa che specifica il tipo di query da eseguire.
 \end{itemize}
 
@@ -377,7 +378,7 @@ I diagrammi di sequenza sono utili per comprendere il comportamento dinamico di 
 
 \subsection{Sequence Diagram del progetto}
 
-Nel Sequence Diagram in figura \ref{4fig:sequenceDiagram}, viene mostrato il flusso di esecuzione standard che va dalla visualizzazione del menu principale fino alla pagina dedicata alla sezione desiderata dall'utente.
+Nel Sequence Diagram in Figura \ref{4fig:sequenceDiagram} viene mostrato il flusso di esecuzione standard che va dalla visualizzazione del menu principale fino alla pagina dedicata alla sezione desiderata dall'utente.
 
 \begin{figure}[h]
 	\centering
@@ -409,7 +410,7 @@ Le animazioni in Unity sono un elemento fondamentale per creare giochi interatti
 Di seguito, è riportata una panoramica del funzionamento delle animazioni in Unity:
 
 \begin{itemize}
-    \item \textit{Animator Controller}: è il componente principale per gestire le animazioni in Unity. Questo controller definisce gli stati, le transizioni e le regole per la riproduzione delle animazioni;
+    \item \textit{Animator Controller}: è il componente principale per gestire le animazioni in Unity. Questo controller definisce gli stati, le transizioni e le regole per la riproduzione delle animazioni.
     \item Animation Clips: Un Animation Clip è un file che contiene un'animazione specifica. Puoi crearli importando file da programmi di modellazione 3D o crearli direttamente in Unity utilizzando l'Editor di animazione. Questi clip vengono poi collegati all'Animator Controller.
     \item \textit{Animator Window}: è un'interfaccia utente visuale che consente di creare e gestire le transizioni tra gli stati dell'Animator Controller. È possibile aggiungere transizioni tra diversi stati e definire le condizioni che le attivano.
     \item \textit{Layers}: gli Animator Controller possono avere più layer, che consentono di gestire animazioni sovrapposte o di priorità diverse.
@@ -422,64 +423,62 @@ Di seguito, è riportata una panoramica del funzionamento delle animazioni in Un
 
 \subsection{Le animazioni utilizzate nel progetto}
 
-\subsubsection{Menu principale}
+\subsubsection{Menù principale}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics [width=.95\columnwidth, angle=0]
-            {menuAnimSchema}
-	\caption{La struttura dell'animator controller "Menu Controller"} 
-	\label{4fig:menuAnimSchema}
-\end{figure}
-
-In figura \ref{4fig:menuAnimSchema}, è riportata la struttura dell'animator controller denominato \textit{Menu Controller}. Nel momento in cui l'applicazione Android viene eseguita, l'animator che si trova nello stato \textit{Entry}, attiva automaticamente l'animazione \textit{MenuFadeIn} che permette di visualizzare le tre voci del menu principale descritte nei capitoli precedenti con un effetto \textit{FadeIn} in ingresso.
+In Figura \ref{4fig:menuAnimSchema}, è riportata la struttura dell'animator controller denominato \textit{Menu Controller}. Nel momento in cui l'applicazione Android viene eseguita, l'animator che si trova nello stato \textit{Entry}, attiva automaticamente l'animazione \textit{MenuFadeIn} che permette di visualizzare le tre voci del menu principale descritte nei capitoli precedenti con un effetto \textit{FadeIn} in ingresso.
 
 Successivamente, l'applicazione rimane in attesa di un input da parte dell'utente. Quest'ultimo, nel momento in cui effettua la scelta, attiva l'animazione associata alle tre voci presenti nel menu rispettivamente \textit{ChoiceOsserva}, \textit{ChoiceAscolta} e \textit{ChoiceRacconta}. Ciascuna di queste animazioni passano automaticamente allo stato \textit{Scene1\_Idle}. 
 
 L'applicazione mostrerà un bottone a forma di esagono che attende l'input dell'utente. Nel momento in cui il bottone verrà premuto, si attiverà la scena dedicata al riconoscimento del prodotto vitivinicolo.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics [width=.85\columnwidth, angle=0]
+            {menuAnimSchema}
+	\caption{La struttura dell'animator controller "Menu Controller"} 
+	\label{4fig:menuAnimSchema}
+\end{figure}
+
 \subsubsection{Scelta dell'annata}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics [width=.50\columnwidth, angle=0]
+	\includegraphics [width=.30\columnwidth, angle=0]
             {Scene2Anim}
 	\caption{La struttura dell'animator controller "Scene2IntroController"} 
 	\label{4fig:scene2anim}
 \end{figure}
 
-Come già anticipato nei capitoli precedenti, una volta che il prodotto vitivinicolo è stato riconosciuto l'applicazione carica la scena dedicata alla selezione dell'annata del vino. Il controller all'avvio della nuova scena, è nello stato \textit{Entry} che attiva, tramite una transizione, l'animazione \textit{Scene2Intro} che si occupa si effettuare lo scorrimento della finestra dal basso verso l'altro fino a metà schermo per permettere all'utente di poter scegliere l'annata della bottiglia di vino di suo interesse.
+Come già anticipato nei capitoli precedenti, una volta che il prodotto vitivinicolo è stato riconosciuto l'applicazione carica la scena dedicata alla selezione dell'annata del vino. L'animator controller chiamato \textit{"Scene2IntroController"} (Figura \ref{4fig:scene2anim}) all'avvio della nuova scena, è nello stato \textit{Entry} che attiva, tramite una transizione, l'animazione \textit{Scene2Intro} che si occupa si effettuare lo scorrimento della finestra dal basso verso l'altro fino a metà schermo per permettere all'utente di poter scegliere l'annata della bottiglia di vino di suo interesse.
 
 Dopo aver scelto l'annata, l'utente preme il bottone "Avanti" che attiva la scena \textit{Scene2anim} che effettua lo scorrimento completo della finestra per creare un effetto di transizione verso l'ultima scena dell'applicazione che mostra le tre sezioni "Osserva", "Ascolta" e "Racconta".
 
-
 \section{Il database MongoDB}
 
-Il database MongoDB, come già accennato, contiene i dati relativi ai vigneti monitorati dall'azienda Trace Technologies. Ogni documento MongoDB contiene i dati di un vigneto strutturati in figura \ref{4fig:mongodb1} dove:
+Il database MongoDB, come già accennato, contiene i dati relativi ai vigneti monitorati dall'azienda Trace Technologies. Ogni documento MongoDB contiene i dati di un vigneto strutturati in Figura \ref{4fig:mongodb1} dove:
 
 \begin{figure}[h]
 	\centering
-	\includegraphics [width=.95\columnwidth, angle=0]
+	\includegraphics [width=.75\columnwidth, angle=0]
             {mongodb1}
 	\caption{Documento MongoDB della cantina Strappelli}
 	\label{4fig:mongodb1}
 \end{figure}
 
 \begin{itemize}
-    \item \textit{Nome}: rappresenta il nome univoco del prodotto vitivinicolo;
-    \item \textit{Titolo1}: contiene il nome che appare nelle intestazioni del prodotto vitivinicolo nelle varie sezioni dell'applicazione Android;
-    \item \textit{Titolo2}: contiene le sotto-intestazioni del prodotto vitivinicolo nelle varie sezioni dell'applicazione Android;
-    \item \textit{Latitudine}: memorizza la latitudine del campo associato al vigneto;
-    \item \textit{Longitudine}: memorizza la longitudine del campo associato al vigneto;
-    \item \textit{Descrizione}: contiene una breve descrizione delle caratteristiche del vino associato alla bottiglia riconosciuta suddivisa per annata;
-    \item \textit{LuogoProd}: contiene il luogo in cui il vino viene prodotto;
-    \item \textit{ScriptSommelier}: memorizza un dizionario per ogni annata in cui ad ogni timestamp in secondi è associata una stringa di testo. Questo campo viene utilizzato nella sezione "Ascolta" descritta in precedenza per ottenere il testo sincronizzato con l'audio (figura \ref{4fig:mongodb2}).
+    \item \textit{Nome}: rappresenta il nome univoco del prodotto vitivinicolo.
+    \item \textit{Titolo1}: contiene il nome che appare nelle intestazioni del prodotto vitivinicolo nelle varie sezioni dell'applicazione Android.
+    \item \textit{Titolo2}: contiene le sotto-intestazioni del prodotto vitivinicolo nelle varie sezioni dell'applicazione Android.
+    \item \textit{Latitudine}: memorizza la latitudine del campo associato al vigneto.
+    \item \textit{Longitudine}: memorizza la longitudine del campo associato al vigneto.
+    \item \textit{Descrizione}: contiene una breve descrizione delle caratteristiche del vino associato alla bottiglia riconosciuta suddivisa per annata.
+    \item \textit{LuogoProd}: contiene il luogo in cui il vino viene prodotto.
+    \item \textit{ScriptSommelier}: memorizza un dizionario per ogni annata in cui ad ogni timestamp in secondi è associata una stringa di testo. Questo campo viene utilizzato nella sezione "Ascolta" descritta in precedenza per ottenere il testo sincronizzato con l'audio (Figura \ref{4fig:mongodb2}).
 \end{itemize}
-
 
 \begin{figure}[h]
 	\centering
-	\includegraphics [width=.65\columnwidth, angle=0]
+	\includegraphics [width=.45\columnwidth, angle=0]
             {mongodb2}
 	\caption{Struttura del campo "ScriptSommelier"}
 	\label{4fig:mongodb2}
