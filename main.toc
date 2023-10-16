@@ -66,39 +66,45 @@
 \contentsline {subsection}{\numberline {2.3.2}Casi d'uso nella tracciabilità}{34}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Configurazioni della blockchain}{35}{subsection.2.3.3}%
 \contentsline {chapter}{\numberline {3}Descrizione generale del progetto}{37}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Scopo generale dell'applicazione}{37}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Strumenti software utilizzati}{38}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Unity}{38}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.1}Premessa}{37}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Scopo generale dell'applicazione}{37}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Strumenti software utilizzati}{38}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Unity}{38}{subsection.3.3.1}%
 \contentsline {subsubsection}{Storia di Unity}{38}{section*.44}%
 \contentsline {subsubsection}{Aspetti distintivi e funzionalità}{38}{section*.45}%
-\contentsline {subsection}{\numberline {3.2.2}Vuforia Engine}{39}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3.2}Vuforia Engine}{39}{subsection.3.3.2}%
 \contentsline {subsubsection}{Caratteristiche di Vuforia Engine}{40}{section*.47}%
-\contentsline {subsection}{\numberline {3.2.3}Polycam}{41}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Blender}{42}{subsection.3.2.4}%
-\contentsline {subsubsection}{Storia di Blender}{42}{section*.50}%
-\contentsline {subsubsection}{Caratteristiche di Blender}{42}{section*.51}%
-\contentsline {subsection}{\numberline {3.2.5}Vuforia Model Target Generator}{43}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}MongoDB}{43}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.3.3}Polycam}{40}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Blender}{41}{subsection.3.3.4}%
+\contentsline {subsubsection}{Storia di Blender}{41}{section*.50}%
+\contentsline {subsubsection}{Caratteristiche di Blender}{41}{section*.51}%
+\contentsline {subsection}{\numberline {3.3.5}Vuforia Model Target Generator}{42}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}MongoDB}{42}{subsection.3.3.6}%
 \contentsline {subsubsection}{Architettura di MongoDB}{43}{section*.53}%
-\contentsline {subsubsection}{Principali caratteristiche e funzionalità di MongoDB}{44}{section*.54}%
-\contentsline {subsection}{\numberline {3.2.7}Google Earth Studio}{44}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}OpenWeather}{46}{subsection.3.2.8}%
-\contentsline {subsubsection}{API OpenWeather}{46}{section*.56}%
-\contentsline {section}{\numberline {3.3}Strumentazione IoT utilizzata}{47}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Funzionamento dell'applicazione}{48}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Progettazione del sistema}{56}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Scelte progettuali effettuate}{56}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Diagrammi delle classi}{57}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}La classe IotAPICaller}{57}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}La classe OpenWeatherAPICaller}{60}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}La classe ScriptManager}{63}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}La classe MongoDBConnector}{64}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Sequence Diagram}{65}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Animazioni in Unity}{66}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Il database MongoDB}{66}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Implementazione e manuale utente}{68}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Confronto con sistemi di tracciamento}{69}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Discussione in merito al lavoro svolto}{70}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusioni}{71}{chapter.8}%
-\contentsline {chapter}{Bibliografia}{72}{section*.72}%
-\contentsline {chapter}{Ringraziamenti}{73}{chapter*.74}%
+\contentsline {subsubsection}{Principali caratteristiche e funzionalità di MongoDB}{43}{section*.54}%
+\contentsline {subsection}{\numberline {3.3.7}Google Earth Studio}{44}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}OpenWeather}{45}{subsection.3.3.8}%
+\contentsline {section}{\numberline {3.4}Strumentazione IoT utilizzata}{46}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Funzionamento dell'applicazione}{47}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Progettazione del sistema}{52}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Scelte progettuali effettuate}{52}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Diagrammi delle classi}{53}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}La classe IotAPICaller}{53}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}La classe OpenWeatherAPICaller}{56}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}La classe ScriptManager}{59}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}La classe MongoDBConnector}{60}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Sequence Diagram}{61}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Introduzione}{61}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Sequence Diagram del progetto}{62}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Animazioni in Unity}{63}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Introduzione}{63}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Le animazioni utilizzate nel progetto}{63}{subsection.4.4.2}%
+\contentsline {subsubsection}{Menu principale}{63}{section*.70}%
+\contentsline {subsubsection}{Scelta dell'annata}{64}{section*.72}%
+\contentsline {section}{\numberline {4.5}Il database MongoDB}{65}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Implementazione e manuale utente}{67}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Confronto con sistemi di tracciamento}{68}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Discussione in merito al lavoro svolto}{69}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusioni}{70}{chapter.8}%
+\contentsline {chapter}{Bibliografia}{71}{section*.76}%
+\contentsline {chapter}{Ringraziamenti}{72}{chapter*.78}%

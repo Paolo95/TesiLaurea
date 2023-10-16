@@ -2,28 +2,27 @@
 
 \begin{preamble}
 {\em 
-In questo capitolo, si esplorerà in dettaglio la progettazione software dell'applicazione Android. 
-Si esamineranno i Class Diagram delle principali classi implementate nel progetto per fornire una visione panoramica della loro struttura.
+In questo capitolo, si esplorerà in dettaglio la progettazione software dell'applicazione Android. Si esamineranno i diagrammi delle classi delle principali classi implementate nel progetto per fornire una visione completa della loro struttura.
 
-Saranno presentati successivamente, alcuni Sequence Diagram che illustreranno le interazioni dinamiche tra le classi principali implementate nell'app, consentendo una comprensione più approfondita delle operazioni svolte dall'applicazione durante l'operazione di riconoscimento degli oggetti.
+Successivamente, si presenterà un diagramma di sequenza che illustrerà le interazioni dinamiche tra le classi principali implementate nell'app. Questo permetterà di comprendere in dettaglio le operazioni svolte dall'applicazione durante il processo di riconoscimento degli oggetti.
 
-Si descriveranno poi le animazioni implementate in Unity, che contribuiscono a rendere l'esperienza utente più coinvolgente e interattiva.
+Inoltre, si descriveranno le animazioni implementate in Unity, che contribuiscono a rendere l'esperienza utente più coinvolgente e interattiva.
 
-Per completare il quadro della progettazione, si esplorerà anche la struttura del database utilizzato per memorizzare informazioni cruciali sulle bottiglie di vino. Questa parte sarà essenziale per garantire un efficiente recupero e gestione dei dati all'interno dell'app Android.
+Per completare il quadro della progettazione, si esplorerà anche la struttura del database utilizzato per memorizzare informazioni cruciali sulle bottiglie di vino. Questa parte è essenziale per garantire un recupero e una gestione efficiente dei dati all'interno dell'app Android.
 }
 \end{preamble}
 
 \section{Scelte progettuali effettuate}
 
-Nel capitolo precedente, sono stati descritti tutti gli strumenti software impiegati con una descrizione delle funzionalità principali di ognuno. In questa sezione, verranno descritti le versioni e le modalità di utilizzo di tutti gli strumenti utilizzati in modo tale da fornire una prima documentazione progettuale dell'applicazione:
+Nel capitolo precedente, si è fornita una panoramica degli strumenti software utilizzati, insieme alle loro funzionalità principali. In questa sezione, si descriveranno le versioni e le modalità di utilizzo di questi strumenti, offrendo una prima documentazione progettuale dell'applicazione:
 
 \begin{itemize}
-    \item \textit{Unity}: si è scelto di utilizzare la versione dell'editor \textit{2022.3.9f1 LTS (Long-Term-Support)}. Si è scelto di non utilizzare le ultime versioni per avere una maggiore garanzia di stabilità dell'editor.
-    \item \textit{Vuforia Engine}: la versione adottata è la \textit{10.17.4}. 
-    \item \textit{PolyCam}: l'app, come già anticipato nel capitolo precedente, permette diversi scenari di utilizzo. In questo caso, si è scelto di utilizzare la \textit{Photo Mode} utilizzando più di 100 fotografie scattate attraverso lo smartphone della bottiglia della Cantina Strappelli in modo tale da ottenere un modello tridimensionale dell'oggetto, compreso di texture per il riconoscimento del colore e grafica dell'etichetta della bottiglia di vino.
-    \item \textit{Blender}: per quanto riguarda Blender, non sono necessarie funzionalità avanzate del software ragione per cui si è installata l'ultima versione disponibile ovvero la 3.6.
-    \item \textit{Vuforia Model Target Generator}: anche in questo caso, si è utilizzata l'ultima versione disponibile dell'applicazione ovvero la \textit{10.17.4}.
-    \item \textit{OpenWeather}: la versione dell'API utilizzata nel progetto è la \textit{2.5}.
+\item \textit{Unity}: si è optato per l'utilizzo della versione dell'editor \textit{2022.3.9f1 LTS (Long-Term-Support)} al fine di garantire maggiore stabilità, rinunciando alle ultime versioni.
+\item \textit{Vuforia Engine}: la versione utilizzata è la \textit{10.17.4}.
+\item \textit{PolyCam}: l'applicazione offre diverse modalità d'uso, ma in questo contesto si è selezionata la \textit{Photo Mode}. Si sono acquisite oltre 100 fotografie della bottiglia della Cantina Strappelli tramite smartphone per creare un modello tridimensionale dell'oggetto, comprensivo di texture per il riconoscimento del colore e grafica dell'etichetta della bottiglia di vino.
+\item \textit{Blender}: poiché non sono richieste funzionalità avanzate di Blender per il progetto, si è installata l'ultima versione disponibile, ovvero la 3.6.
+\item \textit{Vuforia Model Target Generator}: anche in questo caso, si è utilizzata l'ultima versione disponibile dell'applicazione, la \textit{10.17.4}.
+\item \textit{OpenWeather}: nel progetto, si è utilizzata la versione 2.5 dell'API di OpenWeather.
 \end{itemize}
 
 \section{Diagrammi delle classi}
@@ -40,15 +39,15 @@ Un diagramma delle classi contiene il nome della classe e tre sezioni principali
 
 \subsection{La classe IotAPICaller}
 
-La classe \textit{IotAPICaller} si occupa di gestire le chiamate API con la stazione IoT presente nel campo dell'azienda vitivinicola Strappelli. Come già accennato nel capitolo precedente, la stazione IoT carica i dati in tempo reale su una piattaforma cloud che ha al suo interno una API che permette l'accesso ai dati.
+La classe \textit{IotAPICaller} è responsabile della gestione delle chiamate API alla stazione IoT situata nel campo dell'azienda vitivinicola Strappelli. Come precedentemente menzionato nel capitolo precedente, la stazione IoT carica i dati in tempo reale su una piattaforma cloud, la quale ospita un'appostia API che consente l'accesso ai dati.
 
-L'API restituisce in output i dati in formato JSON in un formato molto simile ad una tabella di un database relazionale composta da un'intestazione e un corpo  della tabella con l'aggiunta di due "campi" \textit{status} e \textit{rows}.
+L'API restituisce i dati in formato JSON, strutturati in modo simile ad una tabella di un database relazionale. Questa struttura comprende un'intestazione e un corpo di tabella, con l'aggiunta di due campi aggiuntivi, denominati \textit{status} e \textit{rows}.
 
-La classe IoTAPICaller invia una richiesta HTTP POST in cui il body ha al suo interno una query SQL per richiedere i dati più recenti caricati dalla stazione IoT nella piattaforma cloud.
+La classe \textit{IotAPICaller} effettua una richiesta HTTP POST con una query SQL nel corpo della richiesta per ottenere i dati più recenti caricati dalla stazione IoT sulla piattaforma cloud.
 
-Un esempio della struttura dati è riportato in basso. 
+Un esempio della struttura dei dati è riportato di seguito:
 
-\begin{lstlisting}[language=json]
+\begin{lstlisting}
  {
     "status":"succ",
     "head":
@@ -94,7 +93,7 @@ Un esempio della struttura dati è riportato in basso.
 \end{lstlisting}
 
 Il primo campo denominato \textit{"status"} mostra lo stato della richiesta HTTP inviata.
-Il campo \textit{"head"}, come già accennato, rappresenta l'intestazione della tabella che descrive i dati composta dai seguenti campi inseriti all'interno di un array:
+Il campo \textit{"head"}, come già accennato, rappresenta l'intestazione della tabella che descrive i dati ed è composta dai seguenti campi inseriti all'interno di un array:
 
 \begin{itemize}
     \item \textit{ts}: rappresenta un timestamp che indica quando i dati sono stati registrati.
@@ -112,7 +111,7 @@ Il campo \textit{"head"}, come già accennato, rappresenta l'intestazione della 
     \item \textit{ext\_str}, \textit{ext\_var1} e \textit{ext\_var2}: questi campi contengono dati aggiuntivi in formato numerico.
 \end{itemize}
 
-Il campo \textit{data} contiene al suo interno i valori associati all'intestazione presente nel campo \textit{head}. Infine, il campo \textit{rows} contiene il numero di righe estratte dalla tabella SQL.
+Il campo \textit{data} contiene al suo interno i valori associati all'intestazione presente nel campo \textit{head}. Infine, il campo \textit{rows} contiene il numero di righe estratte dalla query SQL.
 
 \begin{figure}[h]
 	\centering
@@ -122,7 +121,7 @@ Il campo \textit{data} contiene al suo interno i valori associati all'intestazio
 	\label{4fig:classDiagramIotAPICaller}
 \end{figure}
 
-La classe IotAPICaller, mostrata nel Class Diagram in figura \ref{}, ha i seguenti attributi:
+La classe IotAPICaller, mostrata nel Class Diagram in figura \ref{4fig:classDiagramIotAPICaller}, ha i seguenti attributi:
 
 \begin{itemize}
     \item \textit{txtLeafTemp}: rappresenta il testo all'interno dell'interfaccia grafica di Unity relativo alla temperatura della foglia; 
@@ -146,7 +145,7 @@ Infine, la classe contiene i seguenti metodi:
 
 La classe \textit{OpenWeatherAPICaller} si occupa di gestire i dati che provengono dall'API di OpenWeather. Quest'ultima restituisce i dati in formato JSON. Un esempio è fornito di seguito:
 
-\begin{lstlisting}[language=json]
+\begin{lstlisting}
 {
     "coord":
             {
@@ -267,9 +266,9 @@ Il file JSON presenta diversi campi tra cui:
 	\label{4fig:classDiagramOpenWeatherAPICaller}
 \end{figure}
 
-La classe OpenWeatherAPICaller ha il compito di convertire la stringa JSON proveniente dall'API di OpenWeather in una serie di variabili, ognuna relativa ad un campo del file JSON.
+La classe \textit{OpenWeatherAPICaller} ha il compito di trasformare la stringa JSON proveniente dall'API di OpenWeather in una serie di variabili, ciascuna corrispondente a un campo del file JSON.
 
-Per fare ciò, utilizza delle classi che sono strutturate in modo tale da organizzare e incapsulare i dati relativi alle condizioni meteorologiche in una forma facilmente gestibile all'interno dell'applicazione. La classe principale \textit{WeatherData} ad esempio, contiene tutti i dati correlati alle condizioni meteorologiche e le altre classi vengono utilizzate per rappresentare informazioni specifiche all'interno di questa struttura dati gerarchica.
+Per svolgere questa operazione, fa uso di classi strutturate in modo da organizzare e incapsulare i dati relativi alle condizioni meteorologiche in una forma facilmente gestibile all'interno dell'applicazione. La classe principale, denominata \textit{WeatherData}, raccoglie tutti i dati relativi alle condizioni meteorologiche, mentre le altre classi vengono impiegate per rappresentare informazioni specifiche all'interno di questa struttura dati gerarchica.
 
 Le proprietà presenti nella classe OpenWeatherAPICaller sono:
 
@@ -350,16 +349,18 @@ La classe presenta quattro attributi, tra cui:
 	\label{4fig:classDiagramMongoDBConnector}
 \end{figure}
 
-Classe contiene un solo metodo chiamato \textit{GetDataAsync} utilizzato per avviare un processo di recupero dati asincrono. Accetta due parametri:
+La classe contiene un solo metodo chiamato \textit{GetDataAsync} utilizzato per avviare un processo di recupero dati asincrono che accetta due parametri:
 
 \begin{itemize}
     \item \textit{callback}: un oggetto di tipo Action che specifica la funzione di callback da eseguire quando vengono ricevuti dati;
     \item \textit{queryType}: una stringa che specifica il tipo di query da eseguire.
 \end{itemize}
 
-All'interno di questo metodo, viene costruita una stringa di richiesta JSON in base alla tipologia di query richiesta e i dati appropriati vengono richiesti dal database MongoDB utilizzando un oggetto \textit{UnityWebRequest}. La risposta viene poi elaborata e se la richiesta ha successo, la risposta JSON dal database viene deserializzata in un oggetto JsonResponse e passata alla funzione di callback specificata in onDataReceived. Se la richiesta fallisce, viene registrato un messaggio di errore, e la funzione di callback viene invocata con un parametro null per indicare un errore.
+All'interno di questo metodo, viene costruita una stringa di richiesta JSON in base al tipo di query richiesta, e i dati pertinenti vengono ottenuti dal database MongoDB utilizzando un oggetto \textit{UnityWebRequest}. Successivamente, la risposta viene elaborata. Se la richiesta ha successo, la risposta JSON dal database viene deserializzata in un oggetto \textit{JsonResponse} e quindi passata alla funzione di callback specificata in \textit{onDataReceived}. Nel caso in cui la richiesta non abbia successo, viene registrato un messaggio di errore e la funzione di callback viene chiamata con un parametro nullo per indicare la presenza di un errore.
 
 \section{Sequence Diagram}
+
+\subsection{Introduzione}
 
 Un \textit{diagramma di sequenza} o \textit{Sequence Diagram} è uno dei diagrammi \textit{UML (Unified Modeling Language)} utilizzati nella progettazione del software e nell'analisi dei sistemi. Questo tipo di diagramma viene utilizzato per visualizzare l'interazione tra oggetti o componenti all'interno di un sistema in un momento specifico nel tempo. In altre parole, mostra come gli oggetti comunicano tra loro e in che sequenza avvengono queste interazioni.
 
@@ -374,9 +375,34 @@ Di seguito, verranno illustrati alcuni elementi chiave che si possono trovare in
 
 I diagrammi di sequenza sono utili per comprendere il comportamento dinamico di un sistema e per identificare potenziali problemi o inefficienze nelle interazioni tra gli oggetti. Sono ampiamente utilizzati nella fase di progettazione e analisi dei sistemi software per documentare e comunicare le interazioni tra le parti del sistema.
 
+\subsection{Sequence Diagram del progetto}
+
+Nel Sequence Diagram in figura \ref{4fig:sequenceDiagram}, viene mostrato il flusso di esecuzione standard che va dalla visualizzazione del menu principale fino alla pagina dedicata alla sezione desiderata dall'utente.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics [width=.99\columnwidth, angle=0]
+            {SequenceDiagram}
+	\caption{Sequence Diagram del flusso di esecuzione principale dell'applicazione}
+	\label{4fig:sequenceDiagram}
+\end{figure}
+
+Come precedentemente menzionato, il flusso dell'applicazione procede in questo modo:
+
+Dopo che l'animazione del menu principale ha visualizzato le tre opzioni relative alle sezioni "Osserva", "Ascolta" e "Racconta", l'utente seleziona il pulsante corrispondente alla sezione di suo interesse. La classe \textit{MenuChangeChoices}, attraverso il metodo \textit{SetUserChoice}, registra il nome della sezione desiderata nella variabile \textit{userChoice}. Successivamente, l'animazione mostra il pulsante esagonale che consente di passare alla scena successiva dedicata al riconoscimento del prodotto vitivinicolo tramite il comando \textit{SceneManager.LoadScene(1)}.
+
+L'utente accede quindi alla scena dedicata al riconoscimento del prodotto vitivinicolo. Una volta che l'oggetto è stato riconosciuto, la classe \textit{ObjectTrackingHandler} esegue il comando \textit{SceneManager.LoadScene(2)} per caricare la scena successiva.
+
+Nella nuova scena, vengono richiesti i dati relativi alla bottiglia di vino riconosciuta al database MongoDB. Questi dati vengono utilizzati per popolare i campi testuali presenti nell'interfaccia grafica di Unity, come il nome della cantina e la qualità del vino.
+
+Una volta che la scena è stata inizializzata correttamente con i dati relativi al prodotto vitivinicolo, l'utente seleziona l'annata desiderata e preme il pulsante "Avanti", il che avvia il caricamento dell'ultima scena dell'applicazione chiamata \textit{SceneManager.LoadScene(3)}.
+
+All'avvio dell'ultima scena dell'applicazione, questa richiede alla classe \textit{MenuUserChoices} tramite il metodo pubblico \textit{GetUserChoice}, la stringa contenente la scelta effettuata dall'utente nel menu principale, precedentemente memorizzata nella variabile \textit{userChoice}. Successivamente, la classe \textit{Scene3Init} acquisisce l'annata scelta dall'utente tramite il metodo \textit{GetSelectedOption} e utilizza questi dati per popolare gli elementi dell'interfaccia grafica, richiedendo ulteriori informazioni alla classe \textit{MongoDBConnector}.
 
 
 \section{Animazioni in Unity}
+
+\subsection{Introduzione}
 
 Le animazioni in Unity sono un elemento fondamentale per creare giochi interattivi e applicazioni. Le animazioni consentono di far muovere gli oggetti, i personaggi, le telecamere e molto altro all'interno del progetto Unity.
 
@@ -393,6 +419,39 @@ Di seguito, è riportata una panoramica del funzionamento delle animazioni in Un
     \item \textit{Importazione di animazioni}: è possibile importare animazioni create in programmi come Blender e collegarle all'Animator Controller.
     \item \textit{Esecuzione in tempo reale}: le animazioni in Unity possono essere eseguite in tempo reale, consentendo interazioni dinamiche con il mondo di gioco.
 \end{itemize}
+
+\subsection{Le animazioni utilizzate nel progetto}
+
+\subsubsection{Menu principale}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics [width=.95\columnwidth, angle=0]
+            {menuAnimSchema}
+	\caption{La struttura dell'animator controller "Menu Controller"} 
+	\label{4fig:menuAnimSchema}
+\end{figure}
+
+In figura \ref{4fig:menuAnimSchema}, è riportata la struttura dell'animator controller denominato \textit{Menu Controller}. Nel momento in cui l'applicazione Android viene eseguita, l'animator che si trova nello stato \textit{Entry}, attiva automaticamente l'animazione \textit{MenuFadeIn} che permette di visualizzare le tre voci del menu principale descritte nei capitoli precedenti con un effetto \textit{FadeIn} in ingresso.
+
+Successivamente, l'applicazione rimane in attesa di un input da parte dell'utente. Quest'ultimo, nel momento in cui effettua la scelta, attiva l'animazione associata alle tre voci presenti nel menu rispettivamente \textit{ChoiceOsserva}, \textit{ChoiceAscolta} e \textit{ChoiceRacconta}. Ciascuna di queste animazioni passano automaticamente allo stato \textit{Scene1\_Idle}. 
+
+L'applicazione mostrerà un bottone a forma di esagono che attende l'input dell'utente. Nel momento in cui il bottone verrà premuto, si attiverà la scena dedicata al riconoscimento del prodotto vitivinicolo.
+
+\subsubsection{Scelta dell'annata}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics [width=.50\columnwidth, angle=0]
+            {Scene2Anim}
+	\caption{La struttura dell'animator controller "Scene2IntroController"} 
+	\label{4fig:scene2anim}
+\end{figure}
+
+Come già anticipato nei capitoli precedenti, una volta che il prodotto vitivinicolo è stato riconosciuto l'applicazione carica la scena dedicata alla selezione dell'annata del vino. Il controller all'avvio della nuova scena, è nello stato \textit{Entry} che attiva, tramite una transizione, l'animazione \textit{Scene2Intro} che si occupa si effettuare lo scorrimento della finestra dal basso verso l'altro fino a metà schermo per permettere all'utente di poter scegliere l'annata della bottiglia di vino di suo interesse.
+
+Dopo aver scelto l'annata, l'utente preme il bottone "Avanti" che attiva la scena \textit{Scene2anim} che effettua lo scorrimento completo della finestra per creare un effetto di transizione verso l'ultima scena dell'applicazione che mostra le tre sezioni "Osserva", "Ascolta" e "Racconta".
+
 
 \section{Il database MongoDB}
 
@@ -422,7 +481,6 @@ Il database MongoDB, come già accennato, contiene i dati relativi ai vigneti mo
 	\centering
 	\includegraphics [width=.65\columnwidth, angle=0]
             {mongodb2}
-	\caption{Class Diagram della classe MongoDBConnector}
+	\caption{Struttura del campo "ScriptSommelier"}
 	\label{4fig:mongodb2}
 \end{figure}
-
