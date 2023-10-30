@@ -30,7 +30,12 @@
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Documento MongoDB della cantina Strappelli}}{65}{figure.caption.74}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Struttura del campo \textit {ScriptSommelier}}}{65}{figure.caption.75}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Class Diagram della classe IotAPICaller}}{67}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Il set utilizzato per creare il modello 3D}}{67}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Modello 3D prima dell'utilizzo di Blender}}{68}{figure.caption.77}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Modello 3D dopo l'utilizzo di Blender}}{69}{figure.caption.78}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Posizionamento dell'oggetto \textit {ModelTarget} nella scena}}{69}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Sequenza di operazioni svolte all'avvio dell'applicazione dall'animazione \textit {MenuFadeIn}}}{81}{figure.caption.80}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Sequenza di operazioni svolte dall'animazione \textit {ChoiceOsserva}}}{82}{figure.caption.81}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -11,36 +11,42 @@
 \renewcommand{\lstlistingname}{Listato}
 
 %-- comandi comuni a tutti i listati
+\definecolor{backgroundcolor}{rgb}{0.95,0.95,0.95}
+\definecolor{textcolor}{rgb}{0,0,0}
+\definecolor{keywordcolor}{rgb}{0,0,1}
+\definecolor{stringcolor}{rgb}{1,0.56,0.31}
+\definecolor{commentcolor}{rgb}{0,0.5,0}
+
+
 \lstset{
-  basicstyle=\tiny\tt,
-  stringstyle=\tiny\tt,
-  keywordstyle=\tiny\tt,
+  language=C,
   showstringspaces=false,
   captionpos=b,
-  columns=flexible,
-  aboveskip=10pt,
-  %backgroundcolor=\color{colore_sfondo},
-  frameround=fttt,
-  %frame=trBL,
-  framerule=0pt,
-  xleftmargin=11.5mm,
-  xrightmargin=8.5mm,
+  columns=fullflexible,
+  backgroundcolor=\color{backgroundcolor},
+  basicstyle=\color{textcolor}\small\ttfamily,
+  keywordstyle=\color{keywordcolor},
+  stringstyle=\color{stringcolor},
+  commentstyle=\color{commentcolor},
+  numbers=left,
+  numberstyle=\tiny\color{textcolor},
+  stepnumber=1,
+  numbersep=5pt,
+  tabsize=4,
+  frame=tb, % Top and bottom frame lines
+  framerule=2pt, % Thickness of the frame lines
+  xleftmargin=10pt, % Left margin
   breaklines=true,
-  language=Java,
-  extendedchars=true,
-  %numbers=left,
-  %numberstyle=\tiny
-  %tabsize=3,
-  framexleftmargin=5mm,
-  frame=shadowbox,
-  rulesepcolor=\color{colore_sfondo},
+  rulecolor=\color{backgroundcolor},
   literate=
-  {à}{{\ttfamily\`a}}1
-  {è}{{\ttfamily\`e}}1
-  {ì}{{\ttfamily\`i}}1
-  {ò}{{\ttfamily\`o}}1
-  {ù}{{\ttfamily\`u}}1
+    {à}{{\`a}}1
+    {è}{{\`e}}1
+    {ì}{{\`i}}1
+    {ò}{{\`o}}1
+    {ù}{{\`u}}1,
+  morekeywords={async, await}, % Add any extra keywords you want to highlight
 }
+
 
 %-- Esempio di utilizzo del pacchetto
 %
