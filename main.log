@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.14)  30 OCT 2023 13:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.14)  6 NOV 2023 00:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -985,6 +985,106 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@cols=\count360
 \TX@ftn=\toks62
 )
+(C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/tabularray\tabularray.s
+ty (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2023-10-10 L3 programming layer (loader) 
+
+(C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2023-10-10 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count361
+\l__pdf_internal_box=\box81
+))
+Package: tabularray 2023-03-01 v2023A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count362
+\l__tblr_c_int=\count363
+\l__tblr_r_int=\count364
+\l__tblr_d_dim=\dimen323
+\l__tblr_h_dim=\dimen324
+\l__tblr_o_dim=\dimen325
+\l__tblr_p_dim=\dimen326
+\l__tblr_q_dim=\dimen327
+\l__tblr_r_dim=\dimen328
+\l__tblr_s_dim=\dimen329
+\l__tblr_t_dim=\dimen330
+\l__tblr_v_dim=\dimen331
+\l__tblr_w_dim=\dimen332
+\l__tblr_a_box=\box82
+\l__tblr_b_box=\box83
+\l__tblr_c_box=\box84
+\l__tblr_d_box=\box85
+\g__tblr_table_count_int=\count365
+\c@colnum=\count366
+\c@rowcount=\count367
+\c@colcount=\count368
+\abovesep=\dimen333
+\belowsep=\dimen334
+\leftsep=\dimen335
+\rightsep=\dimen336
+\g_tblr_level_int=\count369
+\g__tblr_data_row_key_count_int=\count370
+\g__tblr_data_column_key_count_int=\count371
+\g__tblr_data_cell_key_count_int=\count372
+\g__tblr_array_int=\count373
+\l__tblr_key_count_int=\count374
+\l__tblr_key_quotient_int=\count375
+\l__tblr_key_quotient_two_int=\count376
+\l__tblr_key_remainder_int=\count377
+\g__tblr_data_str_value_count_int=\count378
+\rulewidth=\dimen337
+\l__tblr_strut_dp_dim=\dimen338
+\l__tblr_strut_ht_dim=\dimen339
+\g__tblr_cell_wd_dim=\dimen340
+\g__tblr_cell_ht_dim=\dimen341
+\g__tblr_cell_head_dim=\dimen342
+\g__tblr_cell_foot_dim=\dimen343
+\l__column_target_dim=\dimen344
+\l__tblr_caption_box=\box86
+\l__tblr_caption_left_box=\box87
+\l__tblr_row_head_box=\box88
+\l__tblr_row_foot_box=\box89
+\l__tblr_row_head_foot_dim=\dimen345
+\tablewidth=\dimen346
+\l__tblr_table_firsthead_box=\box90
+\l__tblr_table_middlehead_box=\box91
+\l__tblr_table_lasthead_box=\box92
+\l__tblr_table_firstfoot_box=\box93
+\l__tblr_table_middlefoot_box=\box94
+\l__tblr_table_lastfoot_box=\box95
+\l__tblr_remain_height_dim=\dimen347
+\l__tblr_long_from_int=\count379
+\l__tblr_long_to_int=\count380
+\l__tblr_curr_i_int=\count381
+\l__tblr_prev_i_int=\count382
+\l__tblr_table_page_int=\count383
+\l__tblr_table_head_box=\box96
+\l__tblr_table_foot_box=\box97
+\l__tblr_table_head_foot_dim=\dimen348
+\l__tblr_table_head_body_foot_dim=\dimen349
+\l__tblr_table_box=\box98
+\l__tblr_table_hlines_box=\box99
+\l__tblr_hline_box=\box100
+\l__tblr_row_box=\box101
+\l__tblr_col_o_wd_dim=\dimen350
+\l__tblr_col_b_wd_dim=\dimen351
+\l__tblr_hline_leftskip_dim=\dimen352
+\l__tblr_hline_rightskip_dim=\dimen353
+\l__tblr_row_ht_dim=\dimen354
+\l__tblr_row_dp_dim=\dimen355
+\l__tblr_row_abovesep_dim=\dimen356
+\l__tblr_row_belowsep_dim=\dimen357
+\l__tblr_row_vlines_box=\box102
+\l__tblr_vline_box=\box103
+\l__tblr_cell_box=\box104
+\l__row_upper_dim=\dimen358
+\l__row_lower_dim=\dimen359
+\l__row_vpace_dim=\dimen360
+\l__tblr_vline_aboveskip_dim=\dimen361
+\l__tblr_vline_belowskip_dim=\dimen362
+\l__tblr_cell_wd_dim=\dimen363
+\l__tblr_cell_ht_dim=\dimen364
+\l__tblr_diag_box=\box105
+)
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathpazo.sty
 Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup7
@@ -1001,29 +1101,29 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count361
-\Gm@cntv=\count362
-\c@Gm@tempcnt=\count363
-\Gm@bindingoffset=\dimen323
-\Gm@wd@mp=\dimen324
-\Gm@odd@mp=\dimen325
-\Gm@even@mp=\dimen326
-\Gm@layoutwidth=\dimen327
-\Gm@layoutheight=\dimen328
-\Gm@layouthoffset=\dimen329
-\Gm@layoutvoffset=\dimen330
+\Gm@cnth=\count384
+\Gm@cntv=\count385
+\c@Gm@tempcnt=\count386
+\Gm@bindingoffset=\dimen365
+\Gm@wd@mp=\dimen366
+\Gm@odd@mp=\dimen367
+\Gm@even@mp=\dimen368
+\Gm@layoutwidth=\dimen369
+\Gm@layoutheight=\dimen370
+\Gm@layouthoffset=\dimen371
+\Gm@layoutvoffset=\dimen372
 \Gm@dimlist=\toks63
 
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/changepage\chngpage.sty
 Package: chngpage 2009/10/20 v1.2b change page layout
-\c@cp@cnt=\count364
-\c@cp@tempcnt=\count365
+\c@cp@cnt=\count387
+\c@cp@tempcnt=\count388
 ) (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen331
-\ESO@tempdimb=\dimen332
+\ESO@tempdima=\dimen373
+\ESO@tempdimb=\dimen374
 )
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
@@ -1042,19 +1142,19 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less.
 (fancyhdr)                Please consider using the `twoside' option on input l
-ine 200.
+ine 201.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less.
 (fancyhdr)                Please consider using the `twoside' option on input l
-ine 202.
+ine 203.
 
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less.
 (fancyhdr)                Please consider using the `twoside' option on input l
-ine 203.
+ine 204.
 
 (fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
@@ -1068,7 +1168,7 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 )
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/tools\varioref.sty
 Package: varioref 2022/01/09 v1.6f package for extended references (FMi)
-\c@vrcnt=\count366
+\c@vrcnt=\count389
 )
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
@@ -1076,16 +1176,16 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
 \MT@toks=\toks64
-\MT@tempbox=\box81
-\MT@count=\count367
+\MT@tempbox=\box106
+\MT@count=\count390
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
 LaTeX Info: Redefining \leftprotrusion on input line 1060.
 \MT@prot@toks=\toks65
 LaTeX Info: Redefining \rightprotrusion on input line 1078.
 LaTeX Info: Redefining \textls on input line 1368.
-\MT@outer@kern=\dimen333
+\MT@outer@kern=\dimen375
 LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
-\MT@listname@count=\count368
+\MT@listname@count=\count391
 
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
 tex.def
@@ -1136,11 +1236,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count369
+\c@section@level=\count392
 )
-\@linkdim=\dimen334
-\Hy@linkcounter=\count370
-\Hy@pagecounter=\count371
+\@linkdim=\dimen376
+\Hy@linkcounter=\count393
+\Hy@pagecounter=\count394
 
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
@@ -1150,7 +1250,7 @@ Now handling font encoding PD1 ...
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count372
+\Hy@SavedSpaceFactor=\count395
 
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
@@ -1166,21 +1266,21 @@ Package hyperref Info: Plain pages OFF on input line 4182.
 Package hyperref Info: Backreferencing ON on input line 4185.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4434.
-\c@Hy@tempcnt=\count373
+\c@Hy@tempcnt=\count396
 
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4772.
-\XeTeXLinkMargin=\dimen335
+\XeTeXLinkMargin=\dimen377
 
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count374
-\Field@Width=\dimen336
-\Fld@charsize=\dimen337
+\Fld@menulength=\count397
+\Field@Width=\dimen378
+\Fld@charsize=\dimen379
 Package hyperref Info: Hyper figures OFF on input line 6051.
 Package hyperref Info: Link nesting OFF on input line 6056.
 Package hyperref Info: Hyper index ON on input line 6059.
@@ -1193,68 +1293,68 @@ Package hyperref Info: PDF/A mode OFF on input line 6081.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count375
-\c@Item=\count376
-\c@Hfootnote=\count377
+\Hy@abspage=\count398
+\c@Item=\count399
+\c@Hfootnote=\count400
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2023-07-08 v7.01b Hyperref driver for pdfTeX
-\Fld@listcount=\count378
-\c@bookmark@seq@number=\count379
+\Fld@listcount=\count401
+\c@bookmark@seq@number=\count402
 \Hy@SectionHShift=\skip103
 )
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count380
+\c@KVtest=\count403
 \sf@farskip=\skip104
-\sf@captopadj=\dimen338
+\sf@captopadj=\dimen380
 \sf@capskip=\skip105
 \sf@nearskip=\skip106
-\c@subfigure=\count381
-\c@subfigure@save=\count382
-\c@lofdepth=\count383
-\c@subtable=\count384
-\c@subtable@save=\count385
-\c@lotdepth=\count386
+\c@subfigure=\count404
+\c@subfigure@save=\count405
+\c@lofdepth=\count406
+\c@subtable=\count407
+\c@subtable@save=\count408
+\c@lotdepth=\count409
 \sf@top=\skip107
 \sf@bottom=\skip108
 ))
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2023-10-07 v3.3.7 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count387
-\l__siunitx_number_exponent_fixed_int=\count388
-\l__siunitx_number_min_decimal_int=\count389
-\l__siunitx_number_min_integer_int=\count390
-\l__siunitx_number_round_precision_int=\count391
-\l__siunitx_number_lower_threshold_int=\count392
-\l__siunitx_number_upper_threshold_int=\count393
-\l__siunitx_number_group_first_int=\count394
-\l__siunitx_number_group_size_int=\count395
-\l__siunitx_number_group_minimum_int=\count396
-\l__siunitx_angle_tmp_dim=\dimen339
-\l__siunitx_angle_marker_box=\box82
-\l__siunitx_angle_unit_box=\box83
-\l__siunitx_compound_count_int=\count397
+\l__siunitx_number_uncert_offset_int=\count410
+\l__siunitx_number_exponent_fixed_int=\count411
+\l__siunitx_number_min_decimal_int=\count412
+\l__siunitx_number_min_integer_int=\count413
+\l__siunitx_number_round_precision_int=\count414
+\l__siunitx_number_lower_threshold_int=\count415
+\l__siunitx_number_upper_threshold_int=\count416
+\l__siunitx_number_group_first_int=\count417
+\l__siunitx_number_group_size_int=\count418
+\l__siunitx_number_group_minimum_int=\count419
+\l__siunitx_angle_tmp_dim=\dimen381
+\l__siunitx_angle_marker_box=\box107
+\l__siunitx_angle_unit_box=\box108
+\l__siunitx_compound_count_int=\count420
 
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/translations\translatio
 ns.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
 )
-\l__siunitx_table_tmp_box=\box84
-\l__siunitx_table_tmp_dim=\dimen340
-\l__siunitx_table_column_width_dim=\dimen341
-\l__siunitx_table_integer_box=\box85
-\l__siunitx_table_decimal_box=\box86
-\l__siunitx_table_uncert_box=\box87
-\l__siunitx_table_before_box=\box88
-\l__siunitx_table_after_box=\box89
-\l__siunitx_table_before_dim=\dimen342
-\l__siunitx_table_carry_dim=\dimen343
-\l__siunitx_unit_tmp_int=\count398
-\l__siunitx_unit_position_int=\count399
-\l__siunitx_unit_total_int=\count400
+\l__siunitx_table_tmp_box=\box109
+\l__siunitx_table_tmp_dim=\dimen382
+\l__siunitx_table_column_width_dim=\dimen383
+\l__siunitx_table_integer_box=\box110
+\l__siunitx_table_decimal_box=\box111
+\l__siunitx_table_uncert_box=\box112
+\l__siunitx_table_before_box=\box113
+\l__siunitx_table_after_box=\box114
+\l__siunitx_table_before_dim=\dimen384
+\l__siunitx_table_carry_dim=\dimen385
+\l__siunitx_unit_tmp_int=\count421
+\l__siunitx_unit_position_int=\count422
+\l__siunitx_unit_total_int=\count423
 ) (my_listings.sty
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
@@ -1268,12 +1368,7 @@ LaTeX Font Info:    Trying to load font information for T1+ppl on input line 51
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-(C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2023-10-10 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count401
-\l__pdf_internal_box=\box90
-) (main.aux (frontmatter/frontispiece.aux) (frontmatter/credits.aux)
+(main.aux (frontmatter/frontispiece.aux) (frontmatter/credits.aux)
 (frontmatter/abstract.aux) (introduction/introduction.aux)
 (chapter1/chapter1.aux) (chapter2/chapter2.aux) (chapter3/chapter3.aux)
 (chapter4/chapter4.aux) (chapter5/chapter5.aux) (chapter6/chapter6.aux)
@@ -1301,7 +1396,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Info: Redefining \it@ocap on input line 51.
 LaTeX Info: Redefining \it@ccap on input line 51.
-\c@lstlisting=\count402
+\c@lstlisting=\count424
  (main.glsdefs)
 Package backref Info: ** backref set up for natbib ** on input line 51.
 Package gensymb Info: Math companion symbols found on input line 51.
@@ -1316,16 +1411,16 @@ Package gensymb Info: Using \textmu for \micro on input line 51.
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count403
-\scratchdimen=\dimen344
-\scratchbox=\box91
-\nofMPsegments=\count404
-\nofMParguments=\count405
+\scratchcounter=\count425
+\scratchdimen=\dimen386
+\scratchbox=\box115
+\nofMPsegments=\count426
+\nofMParguments=\count427
 \everyMPshowfont=\toks67
-\MPscratchCnt=\count406
-\MPscratchDim=\dimen345
-\MPnumerator=\count407
-\makeMPintoPDFobject=\count408
+\MPscratchCnt=\count428
+\MPscratchDim=\dimen387
+\MPnumerator=\count429
+\makeMPintoPDFobject=\count430
 \everyMPtoPDFconversion=\toks68
 )
 (C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -1344,6 +1439,14 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
+(C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/ninecolors\ninecolors.s
+ty
+Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
+
+(C:\Users\fende\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1417,7 +1520,7 @@ or `english'. on input line 51.
 \openout2 = `frontmatter/frontispiece.aux'.
 
  (frontmatter/frontispiece.tex
-<frontmatter/images/logo_univpm.png, id=338, 332.24126pt x 332.24126pt>
+<frontmatter/images/logo_univpm.png, id=342, 332.24126pt x 332.24126pt>
 File: frontmatter/images/logo_univpm.png Graphic file (type png)
 <use frontmatter/images/logo_univpm.png>
 Package pdftex.def Info: frontmatter/images/logo_univpm.png  used on input line
@@ -1925,7 +2028,7 @@ Capitolo 3.
 
 
 ]
-<chapter3/images/logoUnity.png, id=723, 287.1528pt x 97.0827pt>
+<chapter3/images/logoUnity.png, id=730, 287.1528pt x 97.0827pt>
 File: chapter3/images/logoUnity.png Graphic file (type png)
 <use chapter3/images/logoUnity.png>
 Package pdftex.def Info: chapter3/images/logoUnity.png  used on input line 35.
@@ -1944,7 +2047,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [38 <./chapter3/images/logoUnity.png>]
-<chapter3/images/logoVuforia.png, id=734, 602.25pt x 258.9675pt>
+<chapter3/images/logoVuforia.png, id=741, 602.25pt x 258.9675pt>
 File: chapter3/images/logoVuforia.png Graphic file (type png)
 <use chapter3/images/logoVuforia.png>
 Package pdftex.def Info: chapter3/images/logoVuforia.png  used on input line 70
@@ -1960,7 +2063,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [39 <./chapter3/images/logoVuforia.png>]
-<chapter3/images/logoPolycam.png, id=741, 903.375pt x 252.945pt>
+<chapter3/images/logoPolycam.png, id=748, 903.375pt x 252.945pt>
 File: chapter3/images/logoPolycam.png Graphic file (type png)
 <use chapter3/images/logoPolycam.png>
 Package pdftex.def Info: chapter3/images/logoPolycam.png  used on input line 97
@@ -1976,7 +2079,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [40 <./chapter3/images/logoPolycam.png>]
-<chapter3/images/logoBlender.png, id=748, 1806.75pt x 552.0625pt>
+<chapter3/images/logoBlender.png, id=755, 1806.75pt x 552.0625pt>
 File: chapter3/images/logoBlender.png Graphic file (type png)
 <use chapter3/images/logoBlender.png>
 Package pdftex.def Info: chapter3/images/logoBlender.png  used on input line 11
@@ -1992,7 +2095,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [41 <./chapter3/images/logoBlender.png>]
-<chapter3/images/logoMongoDB.png, id=758, 2569.6pt x 692.5875pt>
+<chapter3/images/logoMongoDB.png, id=765, 2569.6pt x 692.5875pt>
 File: chapter3/images/logoMongoDB.png Graphic file (type png)
 <use chapter3/images/logoMongoDB.png>
 Package pdftex.def Info: chapter3/images/logoMongoDB.png  used on input line 15
@@ -2017,7 +2120,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [43]
-<chapter3/images/logoOpenweather.png, id=770, 301.125pt x 134.5025pt>
+<chapter3/images/logoOpenweather.png, id=777, 301.125pt x 134.5025pt>
 File: chapter3/images/logoOpenweather.png Graphic file (type png)
 <use chapter3/images/logoOpenweather.png>
 Package pdftex.def Info: chapter3/images/logoOpenweather.png  used on input lin
@@ -2042,13 +2145,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [45 <./chapter3/images/logoOpenweather.png>]
-<chapter3/images/stazioneiot.jpg, id=782, 1365.1pt x 1023.825pt>
+<chapter3/images/stazioneiot.jpg, id=789, 1365.1pt x 1023.825pt>
 File: chapter3/images/stazioneiot.jpg Graphic file (type jpg)
 <use chapter3/images/stazioneiot.jpg>
 Package pdftex.def Info: chapter3/images/stazioneiot.jpg  used on input line 25
 2.
 (pdftex.def)             Requested size: 242.5611pt x 181.90596pt.
-<chapter3/images/leafSensor.jpg, id=785, 602.25pt x 340.27126pt>
+<chapter3/images/leafSensor.jpg, id=792, 602.25pt x 340.27126pt>
 File: chapter3/images/leafSensor.jpg Graphic file (type jpg)
 <use chapter3/images/leafSensor.jpg>
 Package pdftex.def Info: chapter3/images/leafSensor.jpg  used on input line 269
@@ -2067,7 +2170,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [46 <./chapter3/images/stazioneiot.jpg>]
-<chapter3/images/menuPrincipale.png, id=791, 813.0375pt x 1445.4pt>
+<chapter3/images/menuPrincipale.png, id=798, 813.0375pt x 1445.4pt>
 File: chapter3/images/menuPrincipale.png Graphic file (type png)
 <use chapter3/images/menuPrincipale.png>
 Package pdftex.def Info: chapter3/images/menuPrincipale.png  used on input line
@@ -2083,13 +2186,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [47 <./chapter3/images/leafSensor.jpg> <./chapter3/images/menuPrincipale.png>]
-<chapter3/images/toccaPerContinuare.png, id=799, 813.0375pt x 1445.4pt>
+<chapter3/images/toccaPerContinuare.png, id=806, 813.0375pt x 1445.4pt>
 File: chapter3/images/toccaPerContinuare.png Graphic file (type png)
 <use chapter3/images/toccaPerContinuare.png>
 Package pdftex.def Info: chapter3/images/toccaPerContinuare.png  used on input 
 line 297.
 (pdftex.def)             Requested size: 176.4044pt x 313.60004pt.
-<chapter3/images/ScenaRiconoscimento.png, id=801, 813.0375pt x 1445.4pt>
+<chapter3/images/ScenaRiconoscimento.png, id=808, 813.0375pt x 1445.4pt>
 File: chapter3/images/ScenaRiconoscimento.png Graphic file (type png)
 <use chapter3/images/ScenaRiconoscimento.png>
 Package pdftex.def Info: chapter3/images/ScenaRiconoscimento.png  used on input
@@ -2108,7 +2211,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [48 <./chapter3/images/toccaPerContinuare.png>]
-<chapter3/images/FinestraScorrevole.png, id=811, 813.0375pt x 1445.4pt>
+<chapter3/images/FinestraScorrevole.png, id=818, 813.0375pt x 1445.4pt>
 File: chapter3/images/FinestraScorrevole.png Graphic file (type png)
 <use chapter3/images/FinestraScorrevole.png>
 Package pdftex.def Info: chapter3/images/FinestraScorrevole.png  used on input 
@@ -2118,7 +2221,7 @@ line 323.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapter3/images/ScenaOsserva.png, id=812, 813.0375pt x 1445.4pt>
+<chapter3/images/ScenaOsserva.png, id=819, 813.0375pt x 1445.4pt>
 File: chapter3/images/ScenaOsserva.png Graphic file (type png)
 <use chapter3/images/ScenaOsserva.png>
 Package pdftex.def Info: chapter3/images/ScenaOsserva.png  used on input line 3
@@ -2127,7 +2230,7 @@ Package pdftex.def Info: chapter3/images/ScenaOsserva.png  used on input line 3
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapter3/images/ScenaAscolta.png, id=813, 813.0375pt x 1445.4pt>
+<chapter3/images/ScenaAscolta.png, id=820, 813.0375pt x 1445.4pt>
 File: chapter3/images/ScenaAscolta.png Graphic file (type png)
 <use chapter3/images/ScenaAscolta.png>
 Package pdftex.def Info: chapter3/images/ScenaAscolta.png  used on input line 3
@@ -2136,7 +2239,7 @@ Package pdftex.def Info: chapter3/images/ScenaAscolta.png  used on input line 3
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapter3/images/ScenaRacconta.png, id=814, 813.0375pt x 1445.4pt>
+<chapter3/images/ScenaRacconta.png, id=821, 813.0375pt x 1445.4pt>
 File: chapter3/images/ScenaRacconta.png Graphic file (type png)
 <use chapter3/images/ScenaRacconta.png>
 Package pdftex.def Info: chapter3/images/ScenaRacconta.png  used on input line 
@@ -2214,7 +2317,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [54]
-<chapter4/images/ClassDiagramIotAPICaller.png, id=890, 157.18726pt x 178.86826p
+<chapter4/images/ClassDiagramIotAPICaller.png, id=897, 157.18726pt x 178.86826p
 t>
 File: chapter4/images/ClassDiagramIotAPICaller.png Graphic file (type png)
 <use chapter4/images/ClassDiagramIotAPICaller.png>
@@ -2249,7 +2352,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [57]
-<chapter4/images/ClassDiagramOpenWeatherAPICaller.png, id=959, 308.352pt x 225.
+<chapter4/images/ClassDiagramOpenWeatherAPICaller.png, id=966, 308.352pt x 225.
 84375pt>
 File: chapter4/images/ClassDiagramOpenWeatherAPICaller.png Graphic file (type p
 ng)
@@ -2267,7 +2370,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [58 <./chapter4/images/ClassDiagramOpenWeatherAPICaller.png>]
-<chapter4/images/ClassDiagramScriptManager.png, id=966, 247.52475pt x 208.98074
+<chapter4/images/ClassDiagramScriptManager.png, id=973, 247.52475pt x 208.98074
 pt>
 File: chapter4/images/ClassDiagramScriptManager.png Graphic file (type png)
 <use chapter4/images/ClassDiagramScriptManager.png>
@@ -2284,7 +2387,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [59 <./chapter4/images/ClassDiagramScriptManager.png>]
-<chapter4/images/ClassDiagramMongoDBConnector.png, id=975, 274.02374pt x 107.20
+<chapter4/images/ClassDiagramMongoDBConnector.png, id=982, 274.02374pt x 107.20
 05pt>
 File: chapter4/images/ClassDiagramMongoDBConnector.png Graphic file (type png)
 <use chapter4/images/ClassDiagramMongoDBConnector.png>
@@ -2304,7 +2407,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [60]
-<chapter4/images/SequenceDiagram.png, id=981, 666.0885pt x 422.7795pt>
+<chapter4/images/SequenceDiagram.png, id=988, 666.0885pt x 422.7795pt>
 File: chapter4/images/SequenceDiagram.png Graphic file (type png)
 <use chapter4/images/SequenceDiagram.png>
 Package pdftex.def Info: chapter4/images/SequenceDiagram.png  used on input lin
@@ -2332,7 +2435,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [62 <./chapter4/images/SequenceDiagram.png>]
-<chapter4/images/menuAnimSchema.png, id=993, 481.8pt x 261.97874pt>
+<chapter4/images/menuAnimSchema.png, id=1000, 481.8pt x 261.97874pt>
 File: chapter4/images/menuAnimSchema.png Graphic file (type png)
 <use chapter4/images/menuAnimSchema.png>
 Package pdftex.def Info: chapter4/images/menuAnimSchema.png  used on input line
@@ -2351,13 +2454,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [63]
-<chapter4/images/Scene2Anim.png, id=1000, 214.401pt x 169.8345pt>
+<chapter4/images/Scene2Anim.png, id=1007, 214.401pt x 169.8345pt>
 File: chapter4/images/Scene2Anim.png Graphic file (type png)
 <use chapter4/images/Scene2Anim.png>
 Package pdftex.def Info: chapter4/images/Scene2Anim.png  used on input line 441
 .
 (pdftex.def)             Requested size: 132.30666pt x 104.8091pt.
-<chapter4/images/mongodb1.png, id=1002, 351.56343pt x 125.71968pt>
+<chapter4/images/mongodb1.png, id=1009, 351.56343pt x 125.71968pt>
 File: chapter4/images/mongodb1.png Graphic file (type png)
 <use chapter4/images/mongodb1.png>
 Package pdftex.def Info: chapter4/images/mongodb1.png  used on input line 455.
@@ -2375,7 +2478,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [64 <./chapter4/images/menuAnimSchema.png> <./chapter4/images/Scene2Anim.png>]
-<chapter4/images/mongodb2.png, id=1011, 314.97675pt x 222.8325pt>
+<chapter4/images/mongodb2.png, id=1018, 314.97675pt x 222.8325pt>
 File: chapter4/images/mongodb2.png Graphic file (type png)
 <use chapter4/images/mongodb2.png>
 Package pdftex.def Info: chapter4/images/mongodb2.png  used on input line 477.
@@ -2395,7 +2498,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (chapter5/chapter5.tex
 Capitolo 5.
-<chapter5/images/setBottiglia.jpg, id=1019, 2312.64pt x 2465.46094pt>
+<chapter5/images/setBottiglia.jpg, id=1026, 2312.64pt x 2465.46094pt>
 File: chapter5/images/setBottiglia.jpg Graphic file (type jpg)
 <use chapter5/images/setBottiglia.jpg>
 Package pdftex.def Info: chapter5/images/setBottiglia.jpg  used on input line 1
@@ -2410,7 +2513,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
-<chapter5/images/preBlender.png, id=1026, 317.38576pt x 366.168pt>
+<chapter5/images/preBlender.png, id=1033, 317.38576pt x 366.168pt>
 File: chapter5/images/preBlender.png Graphic file (type png)
 <use chapter5/images/preBlender.png>
 Package pdftex.def Info: chapter5/images/preBlender.png  used on input line 34.
@@ -2420,7 +2523,7 @@ Package pdftex.def Info: chapter5/images/preBlender.png  used on input line 34.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapter5/images/postBlender.png, id=1027, 203.5605pt x 327.02174pt>
+<chapter5/images/postBlender.png, id=1034, 203.5605pt x 327.02174pt>
 File: chapter5/images/postBlender.png Graphic file (type png)
 <use chapter5/images/postBlender.png>
 Package pdftex.def Info: chapter5/images/postBlender.png  used on input line 42
@@ -2429,7 +2532,7 @@ Package pdftex.def Info: chapter5/images/postBlender.png  used on input line 42
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapter5/images/modelTargetScene.png, id=1029, 268.00125pt x 106.59825pt>
+<chapter5/images/modelTargetScene.png, id=1036, 268.00125pt x 106.59825pt>
 File: chapter5/images/modelTargetScene.png Graphic file (type png)
 <use chapter5/images/modelTargetScene.png>
 Package pdftex.def Info: chapter5/images/modelTargetScene.png  used on input li
@@ -2570,7 +2673,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [80]
-<chapter5/images/animazioneIntro.png, id=1636, 711.8595pt x 131.2905pt>
+<chapter5/images/animazioneIntro.png, id=1643, 711.8595pt x 131.2905pt>
 File: chapter5/images/animazioneIntro.png Graphic file (type png)
 <use chapter5/images/animazioneIntro.png>
 Package pdftex.def Info: chapter5/images/animazioneIntro.png  used on input lin
@@ -2586,7 +2689,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [81 <./chapter5/images/animazioneIntro.png>]
-<chapter5/images/animazioneSceltaOsserva.png, id=1643, 871.45575pt x 416.757pt>
+<chapter5/images/animazioneSceltaOsserva.png, id=1650, 871.45575pt x 416.757pt>
 
 File: chapter5/images/animazioneSceltaOsserva.png Graphic file (type png)
 <use chapter5/images/animazioneSceltaOsserva.png>
@@ -2625,27 +2728,54 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (chapter6/chapter6.tex
 Capitolo 6.
-) [85
+[85
 
 
 
 
-]
+])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[86]
 \openout2 = `chapter7/chapter7.aux'.
 
  (chapter7/chapter7.tex
 Capitolo 7.
-) [86
+[87
 
 
 
 
 ]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[88]
 \openout2 = `chapter8/chapter8.aux'.
 
  (chapter8/chapter8.tex
 Capitolo 8.
-) [87
+) [89
 
 
 
@@ -2657,7 +2787,7 @@ Capitolo 8.
 \tf@brf=\write13
 \openout13 = `main.brf'.
 
-)) [88
+)) [90
 
 
 
@@ -2668,7 +2798,7 @@ Capitolo 8.
 \openout2 = `acknowledgements/acknowledgements.aux'.
 
 
-(acknowledgements/acknowledgements.tex) [89
+(acknowledgements/acknowledgements.tex) [91
 
 
 
@@ -2691,19 +2821,22 @@ L3 programming layer <2023-10-10>
  ***********
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 28EDA50A6CE4734D1E61B7C36C96C34C;17230.
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D731483EA3748F1B1A06F601F4B289AC;17755
+(rerunfilecheck)             After:  B1BC63BB00073136448A7F884A46248F;17710.
 Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 44047 strings out of 474824
- 873220 string characters out of 5750976
- 2329043 words of memory out of 5000000
- 63730 multiletter control sequences out of 15000+600000
- 636164 words of font info for 422 fonts, out of 8000000 for 9000
+ 46423 strings out of 474824
+ 934146 string characters out of 5750976
+ 2330043 words of memory out of 5000000
+ 66082 multiletter control sequences out of 15000+600000
+ 637633 words of font info for 429 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,13n,131p,2365b,2608s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/fende/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
@@ -2715,9 +2848,9 @@ w/palatino/uplb8a.pfb><C:/Users/fende/AppData/Local/Programs/MiKTeX/fonts/type1
 /urw/palatino/uplr8a.pfb><C:/Users/fende/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/urw/palatino/uplr8a.pfb><C:/Users/fende/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (97 pages, 5963917 bytes).
+Output written on main.pdf (99 pages, 5975348 bytes).
 PDF statistics:
- 1915 PDF objects out of 2073 (max. 8388607)
- 905 named destinations out of 1000 (max. 500000)
- 115520 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 1931 PDF objects out of 2073 (max. 8388607)
+ 909 named destinations out of 1000 (max. 500000)
+ 115528 words of extra memory for PDF output out of 128383 (max. 10000000)
 

@@ -124,11 +124,12 @@
 \contentsline {subsubsection}{Sezione Racconta}{84}{section*.84}%
 \contentsline {chapter}{\numberline {6}Confronto con sistemi di tracciamento}{85}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Aspetti in comune del progetto con i sistemi di tracciamento}{85}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Aspetti differenti del progetto con i sistemi di tracciamento}{85}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Discussione in merito al lavoro svolto}{86}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Confronto con l'app Vivino}{86}{section.7.1}%
-\contentsline {section}{\numberline {7.2}SWOT Analysis}{86}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Sviluppi futuri}{86}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Conclusioni}{87}{chapter.8}%
-\contentsline {chapter}{Bibliografia}{88}{section*.85}%
-\contentsline {chapter}{Ringraziamenti}{89}{chapter*.87}%
+\contentsline {section}{\numberline {6.2}Aspetti differenti del progetto con i sistemi di tracciamento}{86}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Discussione in merito al lavoro svolto}{87}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Confronto con l'app Vivino}{87}{section.7.1}%
+\contentsline {section}{\numberline {7.2}SWOT Analysis del progetto}{87}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Difficoltà nella diffusione dell'app tra gli utenti}{88}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Sviluppi futuri del progetto}{88}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Conclusioni}{89}{chapter.8}%
+\contentsline {chapter}{Bibliografia}{90}{section*.86}%
+\contentsline {chapter}{Ringraziamenti}{91}{chapter*.88}%
