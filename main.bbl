@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{10}
 \ProvideTextCommand{\guillemotleft}{OT1}{%
   \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
 \ProvideTextCommand{\guillemotright}{OT1}{%
@@ -9,9 +9,50 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\selectlanguage}[1]{\relax}
 
+\bibitem[{Brisco \emph{et~al.}(1998)}]{brisco1998precision}
+\textsc{Brisco, B.}, \textsc{Brown, R.}, \textsc{Hirose, T.}, \textsc{McNairn,
+  H.}  e \textsc{Staenz, K.} (1998), \enquote{Precision agriculture and the
+  role of remote sensing: a review}, \emph{Canadian Journal of Remote Sensing},
+  vol.~24~(3), p. 315--327.
+
+\bibitem[{Feng \emph{et~al.}(2020)}]{feng2020applying}
+\textsc{Feng, H.}, \textsc{Wang, X.}, \textsc{Duan, Y.}, \textsc{Zhang, J.}  e
+  \textsc{Zhang, X.} (2020), \enquote{Applying blockchain technology to improve
+  agri-food traceability: A review of development methods, benefits and
+  challenges}, \emph{Journal of cleaner production}, vol. 260, p. 121\,031.
+
+\bibitem[{Gebbers e Adamchuk(2010)}]{gebbers2010precision}
+\textsc{Gebbers, R.} e \textsc{Adamchuk, V.~I.} (2010), \enquote{Precision
+  agriculture and food security}, \emph{Science}, vol. 327~(5967), p. 828--831.
+
+\bibitem[{Lin \emph{et~al.}(2018)}]{lin2018blockchain}
+\textsc{Lin, J.}, \textsc{Shen, Z.}, \textsc{Zhang, A.}  e \textsc{Chai, Y.}
+  (2018), \enquote{Blockchain and IoT based food traceability for smart
+  agriculture}, in \enquote{Proceedings of the 3rd international conference on
+  crowd science and engineering}, p. 1--6.
+
+\bibitem[{Olsen e Borit(2018)}]{olsen2018components}
+\textsc{Olsen, P.} e \textsc{Borit, M.} (2018), \enquote{The components of a
+  food traceability system}, \emph{Trends in Food Science \& Technology},
+  vol.~77, p. 143--149.
+
 \bibitem[{Patel(2021)}]{Patel_2021}
 \textsc{Patel, G.~S.} (2021), \emph{Smart agriculture emerging pedagogies of
   deep learning, Machine Learning and internet of things}, CRC Press.
+
+\bibitem[{Pierce e Nowak(1999)}]{pierce1999aspects}
+\textsc{Pierce, F.~J.} e \textsc{Nowak, P.} (1999), \enquote{Aspects of
+  precision agriculture}, \emph{Advances in agronomy}, vol.~67, p. 1--85.
+
+\bibitem[{Stafford(2000)}]{stafford2000implementing}
+\textsc{Stafford, J.~V.} (2000), \enquote{Implementing precision agriculture in
+  the 21st century}, \emph{Journal of agricultural engineering research},
+  vol.~76~(3), p. 267--275.
+
+\bibitem[{Zhang \emph{et~al.}(2002)Zhang, Wang e Wang}]{zhang2002precision}
+\textsc{Zhang, N.}, \textsc{Wang, M.}  e \textsc{Wang, N.} (2002),
+  \enquote{Precision agriculture—a worldwide overview}, \emph{Computers and
+  electronics in agriculture}, vol.~36~(2-3), p. 113--132.
 
 \bibitem[{Zhang(2016)}]{Zhang_2016a}
 \textsc{Zhang, Q.} (2016), \emph{A History of Precision Agricolture}, p.

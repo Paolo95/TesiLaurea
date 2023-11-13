@@ -2,14 +2,25 @@
 
 \begin{preamble}
 {\em
-Il capitolo sarà incentrato nell'analisi del lavoro svolto per la creazione dell'applicazione Android. In particolare, si cercherà di analizzare le differenze e i punti in comune con l'applicazione Vivino, che attualmente è molto in voga tra gli utenti in modo tale da mettere in risalto le potenzialità dell'applicazione mobile. \newline \indent Successivamente, verrà mostrata un'approfondita SWOT Analysis che cercherà di analizzare i rischi associati allo sviluppo e nella distribuzione futura dell'applicazione. \newline \indent Infine, si illustreranno gli sviluppi futuri del progetto a partire dalla roadmap relativa allo sviluppo dell'applicazione fino alle possibili implementazioni e feature aggiuntive che potrebbero essere aggiunte in futuro per migliorare le possibilità offerte dall'applicazione. 
+Il prossimo capitolo sarà incentrato sull'analisi del lavoro dedicato alla creazione dell'applicazione Android. In particolare, saranno esaminate le differenze e le similitudini con l'applicazione Vivino, attualmente molto popolare tra gli utenti, al fine di mettere in evidenza le potenzialità dell'applicazione mobile oggetto della tesi. \newline \indent Successivamente, verrà condotta un'approfondita analisi SWOT dei rischi associati allo sviluppo e alla futura distribuzione dell'applicazione.
 }
 \end{preamble}
 
-
 \section{Confronto con l'app Vivino}
 
+Vivino è una popolare app mobile e una piattaforma online che si concentra sulla degustazione e sulla condivisione di recensioni e informazioni sul vino. Gli utenti di Vivino possono utilizzare l'app per scansionare etichette di bottiglie di vino e ottenerne informazioni dettagliate, come recensioni, punteggi, descrizioni, abbinamenti cibo-vino e prezzi. Inoltre, gli utenti possono anche recensire i vini, tenere traccia dei loro preferiti e connettersi con altri amanti del vino sulla piattaforma.
 
+Vivino è diventato uno strumento popolare per gli appassionati di vino che desiderano esplorare e scoprire nuovi prodotti, condividere le proprie esperienze e prendere decisioni informate sugli acquisti. La piattaforma contiene una vasta quantità di dati sul vino e offre una comunità di appassionati del settore in cui è possibile condividere opinioni e consigli.
+
+Il progetto condivide molti aspetti in comune con l'applicazione Vivino, poiché entrambi sfruttano il riconoscimento delle bottiglie di vino attraverso l'utilizzo della fotocamera. Tuttavia, le differenze risiedono negli obiettivi in quanto Vivino si concentra sulla creazione di una community di appassionati del vino che condividono recensioni e descrizioni sui prodotti vitivinicoli. D'altra parte, l'applicazione oggetto della tesi combina le informazioni di base sul vino con lo stato di salute del vigneto di provenienza, utilizzando sia i dati satellitari che i dati provenienti dalla stazione IoT.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics [width=.45\columnwidth, angle=0]
+            {logoVivino}
+	\caption{Logo dell'applicazione Vivino}
+	\label{7fig:logoVivino}
+\end{figure}
 
 \section{SWOT Analysis del progetto}
 
@@ -17,47 +28,60 @@ L'analisi SWOT (\textit{Strengths}, \textit{Weaknesses}, \textit{Opportunities},
 
 \begin{itemize}
 
-	\item Punti di forza \textit{(Strengths)}: questi sono gli aspetti interni positivi, risorse e capacità che un'organizzazione o un individuo possiede. I punti di forza possono includere competenze specializzate, buone relazioni con i clienti, un marchio forte, risorse finanziarie solide, o qualsiasi altro vantaggio competitivo.
+	\item Punti di forza \textit{(Strengths)}: identifica i punti di forza interni che possono mitigare i rischi.
 	
-	\item Debolezze \textit{(Weaknesses)}: le debolezze sono gli aspetti interni negativi o le carenze che limitano l'efficacia. Questi possono includere una gestione inefficace, carenze nelle competenze del personale, mancanza di risorse finanziarie o problemi operativi.
+	\item Debolezze \textit{(Weaknesses)}: identifica le debolezze interne che possono aumentare i rischi.
 
-	\item Opportunità \textit{(Opportunities)}: le opportunità sono situazioni esterne positive o tendenze di mercato che possono essere sfruttate per ottenere vantaggi. Queste possono includere l'emergere di nuovi mercati, cambiamenti normativi favorevoli, nuove tecnologie o altre circostanze favorevoli.
+	\item Opportunità \textit{(Opportunities)}: identifica le opportunità esterne che possono ridurre i rischi o fornire alternative.
 	
-	\item Minacce \textit{(Threats)}: le minacce sono situazioni esterne negative o fattori che possono rappresentare una sfida o un rischio. Questi possono includere la concorrenza intensa, l'instabilità economica, cambiamenti normativi sfavorevoli o altre minacce al successo.
+	\item Minacce \textit{(Threats)}: identifica le minacce esterne che possono aumentare i rischi.
 
 \end{itemize}
 
-Per condurre una SWOT analysis, è importante identificare con precisione questi fattori, sia interni che esterni. Gli elementi interni sono sotto il controllo dell'organizzazione e possono essere influenzati direttamente, mentre gli elementi esterni sono fuori dal controllo dell'organizzazione ma possono comunque avere un impatto significativo sulla sua strategia.
+Per condurre una \textit{SWOT analysis}, è importante identificare con precisione questi fattori, sia interni che esterni. Gli elementi interni sono sotto il controllo dell'organizzazione e possono essere influenzati direttamente, mentre gli elementi esterni sono fuori dal controllo dell'organizzazione ma possono comunque avere un impatto significativo sulla sua strategia.
 
-Una SWOT analysis aiuta da identificare come sfruttare i punti di forza e le opportunità, mitigare i punti deboli e affrontare le minacce. Questa analisi fornisce una base solida per la pianificazione strategica e la presa di decisioni aziendali informate.
+Una \textit{SWOT analysis} aiuta da identificare come sfruttare i punti di forza e le opportunità, mitigare i punti deboli e affrontare le minacce. Questa analisi fornisce una base solida per la pianificazione strategica e la presa di decisioni aziendali informate.
 
-Di seguito, per ogni rischio associato allo sviluppo e messa in produzione dell'applicazione ne verrà mostrata la \textit{SWOT Analysis}. 
+Per condurre la \textit{SWOT Analysis} dei rischi, è importante definire il concetto di \textit{Smoke Test}. Lo \textit{Smoke Test}rappresenta una metodologia essenziale per la validazione di un'idea di business, garantendo che il prodotto o servizio proposto sia realmente in linea con le aspettative dei futuri clienti.
 
-\subsection{Difficoltà nella diffusione dell'app tra gli utenti}
+Lo scopo principale di questo test è determinare se i potenziali clienti manifestano un interesse reale per l'offerta. La chiave del successo è far percepire loro che il prodotto o servizio è già disponibile sul mercato. Questo processo è cruciale per validare l'idea e coinvolgere potenziali clienti ancor prima del lancio ufficiale del prodotto.
 
-\definecolor{CreamBrulee}{rgb}{1,0.898,0.6}
-\definecolor{BarleyWhite}{rgb}{1,0.949,0.8}
-\definecolor{DoublePearlLusta}{rgb}{0.988,0.898,0.803}
-\begin{table}
-\centering
-\begin{tblr}{
-  row{1} = {CreamBrulee},
-  row{2} = {DoublePearlLusta},
-  column{2} = {BarleyWhite},
-  cell{1}{1} = {c=2}{},
-  cell{1}{3} = {c=2}{},
-  cell{2}{1} = {r=3}{CreamBrulee},
-  vlines,
-  hline{1-2,5} = {-}{},
-  hline{3-4} = {2-4}{},
-}
-                          &         & CARATTERE DEL FATTORE                                                                                                         &                                                                       \\
-{ORIGINE DEL \\FATTORE  } &         & POSITIVO                                                                                                                      & NEGATIVO                                                              \\
-                          & INTERNO & {STRENGHTS\\\labelitemi\hspace{\dimexpr\labelsep+0.5\tabcolsep}test\\\labelitemi\hspace{\dimexpr\labelsep+0.5\tabcolsep}ciao} & {WEAKNESSES\\\labelitemi\hspace{\dimexpr\labelsep+0.5\tabcolsep}test} \\
-                          & ESTERNO & {OPPORTUNITIES\\\labelitemi\hspace{\dimexpr\labelsep+0.5\tabcolsep}test}                                                      & {THREADS\\\labelitemi\hspace{\dimexpr\labelsep+0.5\tabcolsep}test}    
-\end{tblr}
-\end{table}
+Nel prossimo capitolo dedicato agli sviluppi futuri, l'argomento verrà approfondito nel dettaglio indicando delle possibili strategie per l'esecuzione dello Smoke Test dell'applicazione mobile.
 
-\section{Sviluppi futuri del progetto}
+Di seguito, per ogni rischio individuato nello sviluppo e messa in produzione dell'applicazione, ne verrà mostrata la relativa  \textit{SWOT Analysis}. 
 
+\subsection{Difficoltà nella diffusione dell'applicazione tra gli utenti}
 
+Si può prevedere il rischio che l'applicazione incontri delle difficoltà nella sua diffusione tra gli utenti in quanto esiste una forte competizione con delle applicazioni mobile già presenti sul mercato da molti anni. L'analisi SWOT di questo rischio è riportata in Figura \ref{7fig:tabellaDiffusioneUtenti}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics [width=.99\columnwidth, angle=0]
+            {tabellaDiffusioneUtenti}
+	\caption{SWOT Analysis del rischio associato alla difficoltà nella diffusione dell'applicazione tra gli utenti}
+	\label{7fig:tabellaDiffusioneUtenti}
+\end{figure}
+
+\subsection{Difficoltà nello sviluppo futuro dell'applicazione}
+
+Si può prevedere il rischio che l'applicazione incontri delle difficoltà durante il suo sviluppo software. Il progetto è in continua evoluzione e può portare lo sviluppo software verso sfide nuove ed impegnative che, per quanto stimolanti, espongono l'azienda a dei rischi notevoli. L'analisi SWOT di quest'ultimi è riportato in Figura \ref{7fig:tabellaSviluppoApplicazione}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics [width=.99\columnwidth, angle=0]
+            {tabellaSviluppoApplicazione}
+	\caption{SWOT Analysis del rischio associato alla difficoltà nello sviluppo futuro dell'applicazione}
+	\label{7fig:tabellaSviluppoApplicazione}
+\end{figure}
+
+\subsection{Difficoltà nella presentazione dei dati nell'applicazione}
+
+Si può prevedere il rischio che l'applicazione mostri troppe informazioni all'utente, scoraggiandone l'utilizzo e riducendone il tempo di permanenza. L'analisi SWOT di questo rischio è riportata in Figura \ref{7fig:tabellaPresentazioneDati}.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics [width=.99\columnwidth, angle=0]
+            {tabellaPresentazioneDati}
+	\caption{SWOT Analysis del rischio associato alla presentazione dei dati nell'applicazione}
+	\label{7fig:tabellaPresentazioneDati}
+\end{figure}

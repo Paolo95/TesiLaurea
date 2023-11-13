@@ -33,44 +33,44 @@ Reallocating 'name_of_file' (item size: 1) to 13 items.
 Reallocating 'name_of_file' (item size: 1) to 38 items.
 A level-1 auxiliary file: acknowledgements/acknowledgements.aux
 Database file #1: bibliography.bib
-You've used 2 entries,
+You've used 10 entries,
             2987 wiz_defined-function locations,
-            645 strings with 5347 characters,
-and the built_in function-call counts, 964 in all, are:
-= -- 67
-> -- 20
-< -- 3
-+ -- 10
-- -- 6
-* -- 51
-:= -- 144
-add.period$ -- 2
-call.type$ -- 2
-change.case$ -- 10
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 82
-empty$ -- 94
-format.name$ -- 8
-if$ -- 200
+            703 strings with 6793 characters,
+and the built_in function-call counts, 10085 in all, are:
+= -- 1138
+> -- 211
+< -- 22
++ -- 133
+- -- 62
+* -- 574
+:= -- 1029
+add.period$ -- 10
+call.type$ -- 10
+change.case$ -- 55
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 1045
+empty$ -- 628
+format.name$ -- 85
+if$ -- 2084
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 13
-newline$ -- 18
-num.names$ -- 8
-pop$ -- 33
+missing$ -- 92
+newline$ -- 42
+num.names$ -- 40
+pop$ -- 321
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 65
 quote$ -- 0
-skip$ -- 46
+skip$ -- 686
 stack$ -- 0
-substring$ -- 38
-swap$ -- 38
-text.length$ -- 1
+substring$ -- 534
+swap$ -- 914
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 84
 warning$ -- 0
-while$ -- 7
+while$ -- 62
 width$ -- 0
-write$ -- 32
+write$ -- 120
