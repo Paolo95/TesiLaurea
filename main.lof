@@ -4,38 +4,38 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Logo di Unity}}{38}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Logo di Vuforia Engine}}{39}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Logo di Polycam}}{40}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Logo di Blender}}{41}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Logo di MongoDB}}{42}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Logo di OpenWeather}}{45}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces La stazione IoT presente nel campo dell'azienda vitivinicola Strappelli}}{46}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Sensore di temperatura ed umidità della foglia}}{47}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Menu principale dell'applicazione}}{47}{figure.caption.58}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Pulsante che chiede all'utente di iniziare il riconoscimento del prodotto vitivinicolo}}{48}{figure.caption.59}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Scena AR dedicata al riconoscimento del prodotto vitivinicolo}}{49}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Finestra per la selezione dell'annata del prodotto vitivinicolo}}{50}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Screenshot della sezione Osserva}}{50}{figure.caption.62}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Screenshot della sezione Ascolta}}{51}{figure.caption.63}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Screenshot della sezione Racconta}}{51}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Logo di Unity}}{38}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Logo di Vuforia Engine}}{39}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Logo di Polycam}}{40}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Logo di Blender}}{41}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Logo di MongoDB}}{42}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Logo di OpenWeather}}{45}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces La stazione IoT presente nel campo dell'azienda vitivinicola Strappelli}}{46}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Sensore di temperatura ed umidità della foglia}}{47}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Menu principale dell'applicazione}}{47}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Pulsante che chiede all'utente di iniziare il riconoscimento del prodotto vitivinicolo}}{48}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Scena AR dedicata al riconoscimento del prodotto vitivinicolo}}{49}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Finestra per la selezione dell'annata del prodotto vitivinicolo}}{50}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Screenshot della sezione Osserva}}{50}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Screenshot della sezione Ascolta}}{51}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Screenshot della sezione Racconta}}{51}{figure.caption.63}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Class Diagram della classe \textit {IotAPICaller}}}{55}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Class Diagram della classe \textit {OpenWeatherAPICaller}}}{58}{figure.caption.66}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Class Diagram della classe \textit {ScriptManager}}}{59}{figure.caption.67}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Class Diagram della classe \textit {MongoDBConnector}}}{61}{figure.caption.68}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Sequence Diagram del flusso di esecuzione principale dell'applicazione}}{62}{figure.caption.69}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces La struttura dell'animator controller \textit {Menu Controller}}}{64}{figure.caption.71}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces La struttura dell'animator controller "Scene2IntroController"}}{64}{figure.caption.73}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Documento MongoDB della cantina Strappelli}}{65}{figure.caption.74}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Struttura del campo \textit {ScriptSommelier}}}{65}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Class Diagram della classe \textit {IotAPICaller}}}{55}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Class Diagram della classe \textit {OpenWeatherAPICaller}}}{58}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Class Diagram della classe \textit {ScriptManager}}}{59}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Class Diagram della classe \textit {MongoDBConnector}}}{61}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sequence Diagram del flusso di esecuzione principale dell'applicazione}}{62}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces La struttura dell'animator controller \textit {Menu Controller}}}{64}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces La struttura dell'animator controller "Scene2IntroController"}}{64}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Documento MongoDB della cantina Strappelli}}{65}{figure.caption.73}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Struttura del campo \textit {ScriptSommelier}}}{65}{figure.caption.74}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Il set utilizzato per creare il modello 3D}}{67}{figure.caption.76}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Modello 3D prima dell'utilizzo di Blender}}{68}{figure.caption.77}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Modello 3D dopo l'utilizzo di Blender}}{69}{figure.caption.78}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Posizionamento dell'oggetto \textit {ModelTarget} nella scena}}{69}{figure.caption.79}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Sequenza di operazioni svolte all'avvio dell'applicazione dall'animazione \textit {MenuFadeIn}}}{81}{figure.caption.80}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Sequenza di operazioni svolte dall'animazione \textit {ChoiceOsserva}}}{82}{figure.caption.81}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Il set utilizzato per creare il modello 3D}}{67}{figure.caption.75}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Modello 3D prima dell'utilizzo di Blender}}{68}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Modello 3D dopo l'utilizzo di Blender}}{69}{figure.caption.77}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Posizionamento dell'oggetto \textit {ModelTarget} nella scena}}{69}{figure.caption.78}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Sequenza di operazioni svolte all'avvio dell'applicazione dall'animazione \textit {MenuFadeIn}}}{81}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Sequenza di operazioni svolte dall'animazione \textit {ChoiceOsserva}}}{82}{figure.caption.80}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Logo dell'applicazione Vivino}}{87}{figure.caption.85}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Logo dell'applicazione Vivino}}{87}{figure.caption.84}%

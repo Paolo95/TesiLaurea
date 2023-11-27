@@ -1,41 +1,41 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{Introduzione}{1}{section*.5}%
+\contentsline {chapter}{Introduzione}{1}{section*.4}%
 \contentsline {chapter}{\numberline {1}L'agricoltura di precisione}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Introduzione all'agricoltura di precisione}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Storia dell'agricoltura di precisione}{3}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Machine Learning e Deep Learning nell’agricoltura di precisione}{6}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Introduzione}{6}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Il Machine Learning}{7}{subsection.1.3.2}%
-\contentsline {subsubsection}{Supervised Learning}{7}{section*.7}%
-\contentsline {subsubsection}{Unsupervised Learning}{7}{section*.8}%
-\contentsline {subsubsection}{Reinforcement Learning}{8}{section*.9}%
+\contentsline {subsubsection}{Supervised Learning}{7}{section*.6}%
+\contentsline {subsubsection}{Unsupervised Learning}{7}{section*.7}%
+\contentsline {subsubsection}{Reinforcement Learning}{8}{section*.8}%
 \contentsline {subsection}{\numberline {1.3.3}Algoritmi Machine Learning}{8}{subsection.1.3.3}%
-\contentsline {subsubsection}{Artificial Neural Network}{8}{section*.10}%
-\contentsline {subsubsection}{Support Vector Machine}{9}{section*.11}%
-\contentsline {subsubsection}{Clustering}{9}{section*.12}%
-\contentsline {subsubsection}{Decision Tree}{9}{section*.13}%
-\contentsline {subsubsection}{Principle Component Analysis}{9}{section*.14}%
+\contentsline {subsubsection}{Artificial Neural Network}{8}{section*.9}%
+\contentsline {subsubsection}{Support Vector Machine}{9}{section*.10}%
+\contentsline {subsubsection}{Clustering}{9}{section*.11}%
+\contentsline {subsubsection}{Decision Tree}{9}{section*.12}%
+\contentsline {subsubsection}{Principle Component Analysis}{9}{section*.13}%
 \contentsline {subsection}{\numberline {1.3.4}Applicazioni del machine learning in agricoltura}{9}{subsection.1.3.4}%
-\contentsline {subsubsection}{Previsione delle rese}{9}{section*.15}%
-\contentsline {subsubsection}{Rilevamento dei parassiti e malattie}{10}{section*.16}%
-\contentsline {subsubsection}{Rilevamento delle erbacce}{10}{section*.17}%
-\contentsline {subsubsection}{Gestione del suolo}{10}{section*.18}%
-\contentsline {subsubsection}{Riconoscimento delle piante}{11}{section*.19}%
-\contentsline {subsubsection}{Gestione della qualità del raccolto}{11}{section*.20}%
-\contentsline {subsubsection}{Gestione dell'irrigazione}{11}{section*.21}%
-\contentsline {subsubsection}{Benessere degli animali}{12}{section*.22}%
-\contentsline {subsubsection}{Previsioni sul bestiame}{12}{section*.23}%
+\contentsline {subsubsection}{Previsione delle rese}{9}{section*.14}%
+\contentsline {subsubsection}{Rilevamento dei parassiti e malattie}{10}{section*.15}%
+\contentsline {subsubsection}{Rilevamento delle erbacce}{10}{section*.16}%
+\contentsline {subsubsection}{Gestione del suolo}{10}{section*.17}%
+\contentsline {subsubsection}{Riconoscimento delle piante}{11}{section*.18}%
+\contentsline {subsubsection}{Gestione della qualità del raccolto}{11}{section*.19}%
+\contentsline {subsubsection}{Gestione dell'irrigazione}{11}{section*.20}%
+\contentsline {subsubsection}{Benessere degli animali}{12}{section*.21}%
+\contentsline {subsubsection}{Previsioni sul bestiame}{12}{section*.22}%
 \contentsline {subsection}{\numberline {1.3.5}Il Deep Learning}{12}{subsection.1.3.5}%
-\contentsline {subsubsection}{Convolution Neural Networks}{12}{section*.24}%
-\contentsline {subsubsection}{Recurrent Neural Network}{14}{section*.25}%
-\contentsline {subsubsection}{Generative adversarial Networks}{15}{section*.26}%
+\contentsline {subsubsection}{Convolution Neural Network}{12}{section*.23}%
+\contentsline {subsubsection}{Recurrent Neural Network}{14}{section*.24}%
+\contentsline {subsubsection}{Generative adversarial Networks}{15}{section*.25}%
 \contentsline {subsection}{\numberline {1.3.6}Vantaggi e svantaggi in agricoltura}{16}{subsection.1.3.6}%
 \contentsline {subsection}{\numberline {1.3.7}IoT in agricoltura}{16}{subsection.1.3.7}%
-\contentsline {subsubsection}{Introduzione}{16}{section*.27}%
-\contentsline {subsubsection}{Dispositivi IoT}{16}{section*.28}%
-\contentsline {subsubsection}{Benefici in agricoltura}{17}{section*.29}%
+\contentsline {subsubsection}{Introduzione}{16}{section*.26}%
+\contentsline {subsubsection}{Dispositivi IoT}{16}{section*.27}%
+\contentsline {subsubsection}{Benefici in agricoltura}{17}{section*.28}%
 \contentsline {subsection}{\numberline {1.3.8}Applicazioni dell'IoT in agricoltura}{18}{subsection.1.3.8}%
 \contentsline {chapter}{\numberline {2}Il tracciamento dei prodotti}{19}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduzione}{19}{section.2.1}%
@@ -45,22 +45,22 @@
 \contentsline {subsection}{\numberline {2.1.4}Sviluppi futuri}{22}{subsection.2.1.4}%
 \contentsline {section}{\numberline {2.2}Campi di utilizzo}{23}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Salute pubblica}{23}{subsection.2.2.1}%
-\contentsline {subsubsection}{Perché si conducono i tracciamenti}{24}{section*.30}%
-\contentsline {subsubsection}{Descrizione di un tracciamento in ambito sanitario}{25}{section*.31}%
-\contentsline {subsubsection}{Le sfide del tracciamento dei prodotti in ambito sanitario}{26}{section*.32}%
+\contentsline {subsubsection}{Perché si conducono i tracciamenti}{24}{section*.29}%
+\contentsline {subsubsection}{Descrizione di un tracciamento in ambito sanitario}{25}{section*.30}%
+\contentsline {subsubsection}{Le sfide del tracciamento dei prodotti in ambito sanitario}{26}{section*.31}%
 \contentsline {subsection}{\numberline {2.2.2}Industria}{27}{subsection.2.2.2}%
-\contentsline {subsubsection}{Benefici alla catena di approvvigionamento}{28}{section*.33}%
-\contentsline {subsubsection}{Benefici per la gestione dell'inventario}{29}{section*.34}%
-\contentsline {subsubsection}{Benefici per la brand reputation}{29}{section*.35}%
-\contentsline {subsubsection}{Riduzione degli impatti finanziari di un richiamo}{29}{section*.36}%
-\contentsline {subsubsection}{Ritorno sull'investimento}{30}{section*.37}%
+\contentsline {subsubsection}{Benefici alla catena di approvvigionamento}{28}{section*.32}%
+\contentsline {subsubsection}{Benefici per la gestione dell'inventario}{29}{section*.33}%
+\contentsline {subsubsection}{Benefici per la brand reputation}{29}{section*.34}%
+\contentsline {subsubsection}{Riduzione degli impatti finanziari di un richiamo}{29}{section*.35}%
+\contentsline {subsubsection}{Ritorno sull'investimento}{30}{section*.36}%
 \contentsline {subsection}{\numberline {2.2.3}Tracciabilità dei prodotti sfusi}{30}{subsection.2.2.3}%
-\contentsline {subsubsection}{Gestione della tracciabilità dei prodotti sfusi}{31}{section*.38}%
-\contentsline {subsubsection}{Tecnologie impiegate}{31}{section*.39}%
-\contentsline {subsubsection}{Il futuro della tracciabilità dei prodotti sfusi}{32}{section*.40}%
+\contentsline {subsubsection}{Gestione della tracciabilità dei prodotti sfusi}{31}{section*.37}%
+\contentsline {subsubsection}{Tecnologie impiegate}{31}{section*.38}%
+\contentsline {subsubsection}{Il futuro della tracciabilità dei prodotti sfusi}{32}{section*.39}%
 \contentsline {subsection}{\numberline {2.2.4}Tracciabilità della carne e pollame}{32}{subsection.2.2.4}%
-\contentsline {subsubsection}{Il tracciamento degli animali}{32}{section*.41}%
-\contentsline {subsubsection}{Tecnologie impiegate}{32}{section*.42}%
+\contentsline {subsubsection}{Il tracciamento degli animali}{32}{section*.40}%
+\contentsline {subsubsection}{Tecnologie impiegate}{32}{section*.41}%
 \contentsline {section}{\numberline {2.3}La blockchain nella tracciabilità dei prodotti}{33}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Introduzione alla blockchain}{33}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Casi d'uso nella tracciabilità}{34}{subsection.2.3.2}%
@@ -70,18 +70,18 @@
 \contentsline {section}{\numberline {3.2}Scopo generale dell'applicazione}{37}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Strumenti software utilizzati}{38}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Unity}{38}{subsection.3.3.1}%
-\contentsline {subsubsection}{Storia di Unity}{38}{section*.44}%
-\contentsline {subsubsection}{Aspetti distintivi e funzionalità}{38}{section*.45}%
+\contentsline {subsubsection}{Storia di Unity}{38}{section*.43}%
+\contentsline {subsubsection}{Aspetti distintivi e funzionalità}{38}{section*.44}%
 \contentsline {subsection}{\numberline {3.3.2}Vuforia Engine}{39}{subsection.3.3.2}%
-\contentsline {subsubsection}{Caratteristiche di Vuforia Engine}{40}{section*.47}%
+\contentsline {subsubsection}{Caratteristiche di Vuforia Engine}{40}{section*.46}%
 \contentsline {subsection}{\numberline {3.3.3}Polycam}{40}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Blender}{41}{subsection.3.3.4}%
-\contentsline {subsubsection}{Storia di Blender}{41}{section*.50}%
-\contentsline {subsubsection}{Caratteristiche di Blender}{41}{section*.51}%
+\contentsline {subsubsection}{Storia di Blender}{41}{section*.49}%
+\contentsline {subsubsection}{Caratteristiche di Blender}{41}{section*.50}%
 \contentsline {subsection}{\numberline {3.3.5}Vuforia Model Target Generator}{42}{subsection.3.3.5}%
 \contentsline {subsection}{\numberline {3.3.6}MongoDB}{42}{subsection.3.3.6}%
-\contentsline {subsubsection}{Architettura di MongoDB}{43}{section*.53}%
-\contentsline {subsubsection}{Principali caratteristiche e funzionalità di MongoDB}{43}{section*.54}%
+\contentsline {subsubsection}{Architettura di MongoDB}{43}{section*.52}%
+\contentsline {subsubsection}{Principali caratteristiche e funzionalità di MongoDB}{43}{section*.53}%
 \contentsline {subsection}{\numberline {3.3.7}Google Earth Studio}{44}{subsection.3.3.7}%
 \contentsline {subsection}{\numberline {3.3.8}OpenWeather}{45}{subsection.3.3.8}%
 \contentsline {section}{\numberline {3.4}Strumentazione IoT utilizzata}{46}{section.3.4}%
@@ -99,8 +99,8 @@
 \contentsline {section}{\numberline {4.4}Animazioni in Unity}{63}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Introduzione}{63}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Le animazioni utilizzate nel progetto}{63}{subsection.4.4.2}%
-\contentsline {subsubsection}{Menù principale}{63}{section*.70}%
-\contentsline {subsubsection}{Scelta dell'annata}{64}{section*.72}%
+\contentsline {subsubsection}{Menù principale}{63}{section*.69}%
+\contentsline {subsubsection}{Scelta dell'annata}{64}{section*.71}%
 \contentsline {section}{\numberline {4.5}Il database MongoDB}{64}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Implementazione e manuale utente}{66}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Creazione ed importazione di un modello tridimensionale di un prodotto}{66}{section.5.1}%
@@ -119,15 +119,15 @@
 \contentsline {subsection}{\numberline {5.4.1}Premessa}{83}{subsection.5.4.1}%
 \contentsline {subsection}{\numberline {5.4.2}Effettuare il riconoscimento di un prodotto}{83}{subsection.5.4.2}%
 \contentsline {subsection}{\numberline {5.4.3}Utilizzo delle sezioni principali}{83}{subsection.5.4.3}%
-\contentsline {subsubsection}{Sezione Osserva}{83}{section*.82}%
-\contentsline {subsubsection}{Sezione Ascolta}{83}{section*.83}%
-\contentsline {subsubsection}{Sezione Racconta}{84}{section*.84}%
+\contentsline {subsubsection}{Sezione Osserva}{83}{section*.81}%
+\contentsline {subsubsection}{Sezione Ascolta}{83}{section*.82}%
+\contentsline {subsubsection}{Sezione Racconta}{84}{section*.83}%
 \contentsline {chapter}{\numberline {6}Confronto con sistemi di tracciamento}{85}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Aspetti in comune del progetto con i sistemi di tracciamento}{85}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Aspetti differenti del progetto con i sistemi di tracciamento}{86}{section.6.2}%
 \contentsline {chapter}{\numberline {7}Discussione in merito al lavoro svolto}{87}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Confronto con l'app Vivino}{87}{section.7.1}%
 \contentsline {section}{\numberline {7.2}SWOT Analysis del progetto}{88}{section.7.2}%
-\contentsline {chapter}{Conclusioni}{90}{section*.86}%
-\contentsline {chapter}{Bibliografia}{91}{section*.88}%
-\contentsline {chapter}{Ringraziamenti}{93}{chapter*.90}%
+\contentsline {chapter}{Conclusioni}{90}{section*.85}%
+\contentsline {chapter}{Bibliografia}{91}{section*.87}%
+\contentsline {chapter}{Ringraziamenti}{93}{chapter*.89}%

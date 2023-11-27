@@ -24,7 +24,7 @@ Nel capitolo precedente è stata fornita un'ampia panoramica degli strumenti sof
 
 Un \textit{diagramma delle classi} (o \textit{Class Diagram}, in inglese) è uno dei diagrammi più comuni utilizzati nella modellazione dei sistemi orientati agli oggetti nell'ambito dell'ingegneria del software. Questo diagramma fa parte del linguaggio di modellazione \textit{Unified Modeling Language (UML)}, che è ampiamente utilizzato per rappresentare visivamente le strutture e le relazioni dei componenti di un sistema software.
 
-Un diagramma delle classi prende per ciascuna classe, tre sezioni principali, ovvero:
+Un diagramma delle classi prende, per ciascuna classe, tre sezioni principali, ovvero:
 
 \begin{itemize}
     \item \textit{Nome della classe}: è il nome della classe, che rappresenta un concetto all'interno del sistema software.
@@ -96,7 +96,7 @@ Il campo \textit{"head"}, come già accennato, rappresenta l'intestazione della 
     \item \textit{temperature}: rappresenta la temperatura in gradi Celsius.
     \item \textit{humidity}: rappresenta l'umidità relativa dell'aria in percentuale. 
     \item \textit{rainfall\_today}: rappresenta la quantità di pioggia caduta durante la giornata, espressa in millimetri.
-    \item \textit{rainfall\_instantaneous}: rappresenta la quantità di pioggia caduta istantaneamente al momento della raccolta dei dati, espressa in millimetri.
+    \item \textit{rainfall\_instantaneous}: rappresenta la quantità di pioggia caduta istantaneamente al momento della raccolta dei dati espressa in millimetri.
     \item \textit{rainfall\_yesterday}: rappresenta la quantità di pioggia caduta nella giornata precedente, espressa in millimetri.
     \item \textit{rainfall\_total}: rappresenta la quantità totale di pioggia caduta fino a quel momento, espressa in millimetri.
     \item \textit{soil\_temperature}: rappresenta la temperatura del suolo in gradi Celsius.
@@ -232,7 +232,7 @@ Il file JSON presenta diversi campi tra cui:
         \item \textit{gust}: rappresenta la velocità delle raffiche di vento in metri al secondo.
     \end{itemize}
     
-    \item \textit{clouds}: fornisce informazioni sulle nuvole; esso prende il seguente sottocampi:
+    \item \textit{clouds}: fornisce informazioni sulle nuvole; esso prevede il seguente sottocampo:
     \begin{itemize}
         \item \textit{all}: rappresenta la copertura nuvolosa in percentuale.
     \end{itemize}
@@ -275,12 +275,12 @@ Le proprietà presenti nella classe \textit{OpenWeatherAPICaller} sono:
     \item \textit{image}: contiene il riferimento all'immagine presente nell'interfaccia grafica di Unity che mostra due tipologie di immagini in base allo stato del vigneto (in salute o in stato di allerta).
 \end{itemize}
 
-I metodi presenti nella classe, sono riportati di seguito:
+I metodi presenti nella classe sono riportati di seguito:
 
 \begin{itemize}
     \item \textit{Start()}: è il metodo che viene eseguito per prima nel lancio dello script in Unity. Esso si occupa di recuperare la longitudine e latitudine dal database del campo associato alla bottiglia di vino riconosciuta.
     \item \textit{GetWeatherData()}: il metodo si occupa di effettuare la chiamata dall'API di OpenWeather per poi memorizzare i risultati nelle variabili associate a ciascun campo della stringa JSON restituita dall'API.
-    \item \textit{UpdateOpenWeatherData}: aggiorna i dati provenienti all'API di OpenWeather richiamando il metodo \textit{GetWeatherData}.
+    \item \textit{UpdateOpenWeatherData}: aggiorna i dati provenienti dall'API di OpenWeather richiamando il metodo \textit{GetWeatherData}.
     \item \textit{UnixTimeStampToDateTime}: è un metodo che converte un timestamp Unix in una data nel formato \textit{DateTime}.
 \end{itemize}
 
@@ -302,7 +302,7 @@ Gli attributi della classe sono:
     \item \textit{SoundManager}: rappresenta l'oggetto che gestisce la riproduzione audio nella scena Unity.
     \item \textit{currentTime}: memorizza i secondi di riproduzione attuali dell'audio in riproduzione. 
     \item \textit{splitDuration}: è un array di stringhe utilizzato per suddividere la variabile \textit{currentTime} in minuti e secondi.
-    \item \textit{scriptRedListed}: rappresenta una lista di stringhe per memorizzare frammenti di script che devono essere visualizzati in rosso; Questi ultimi rappresentano la porzione di testo già riprodotto.
+    \item \textit{scriptRedListed}: rappresenta una lista di stringhe per memorizzare frammenti di script che devono essere visualizzati in rosso; questi ultimi rappresentano la porzione di testo già riprodotto.
     \item \textit{scriptBlackListed}: rappresenta una lista di stringhe per memorizzare frammenti di script ancora non riprodotti.
     \item \textit{txtReview}: rappresenta un riferimento ad un componente di testo Unity utilizzato per visualizzare il testo associato allo script del sommelier.
     \item \textit{scriptDict}: rappresenta un dizionario che memorizza coppie di valori, dove la chiave è un intero (i secondi) e il valore è una stringa (il testo dello script associato a quel secondo).
@@ -433,7 +433,7 @@ L'applicazione mostrerà un pulsante a forma di esagono che attende l'input dell
 
 \subsubsection{Scelta dell'annata}
 
-Come già anticipato nei capitoli precedenti, una volta che il prodotto vitivinicolo è stato riconosciuto, l'applicazione carica la scena dedicata alla selezione dell'annata del vino. L'animator controller chiamato \textit{"Scene2IntroController"} (Figura \ref{4fig:scene2anim}) all'avvio della nuova scena, è nello stato \textit{Entry}, che attiva, tramite una transizione, l'animazione \textit{Scene2Intro}. Quest'ultima si occupa si effettuare lo scorrimento della finestra dal basso verso l'altro fino a metà schermo per permettere all'utente di scegliere l'annata della bottiglia di vino di suo interesse.
+Come già anticipato nei capitoli precedenti, una volta che il prodotto vitivinicolo è stato riconosciuto, l'applicazione carica la scena dedicata alla selezione dell'annata del vino. L'animator controller chiamato \textit{"Scene2IntroController"} (Figura \ref{4fig:scene2anim}), all'avvio della nuova scena, è nello stato \textit{Entry}, che attiva, tramite una transizione, l'animazione \textit{Scene2Intro}. Quest'ultima si occupa si effettuare lo scorrimento della finestra dal basso verso l'altro fino a metà schermo per permettere all'utente di scegliere l'annata della bottiglia di vino di suo interesse.
 
 \begin{figure}[h]
 	\centering
