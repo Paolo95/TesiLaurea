@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.14)  27 NOV 2023 17:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.14)  27 NOV 2023 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2644,11 +2644,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [77]
-Overfull \hbox (13.95395pt too wide) in paragraph at lines 607--608
-[]\T1/ppl/m/n/10.95 (-20) Sulla ba-se del-la po-si-zio-ne cal-co-la-ta, la bar-
-ra di scor-ri-men-to ver-ti-ca-le dell'\T1/ppl/m/it/10.95 (-20) autoScrollRect
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2857,7 +2852,7 @@ w/palatino/uplb8a.pfb><C:/Users/fende/AppData/Local/Programs/MiKTeX/fonts/type1
 /urw/palatino/uplr8a.pfb><C:/Users/fende/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/urw/palatino/uplr8a.pfb><C:/Users/fende/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (101 pages, 5994458 bytes).
+Output written on main.pdf (101 pages, 5994476 bytes).
 PDF statistics:
  1948 PDF objects out of 2073 (max. 8388607)
  920 named destinations out of 1000 (max. 500000)
